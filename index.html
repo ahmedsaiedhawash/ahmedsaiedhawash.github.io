@@ -55,10 +55,17 @@
 
 <body>
 
+    <!-- ================= READING PROGRESS ================= -->
+
+    <div class="progress-bar" id="progressBar" aria-hidden="true"></div>
+
+    <a href="#home" class="skip-link">Skip to content</a>
+
+
     <!-- ================= NAVIGATION ================= -->
 
     <header class="header">
-        <nav class="navbar container">
+        <nav class="navbar container" aria-label="Main navigation">
 
             <a href="#home" class="logo">AH</a>
 
@@ -91,27 +98,27 @@
 
                 <div class="hero-text">
 
-                    <p class="eyebrow">
+                    <p class="eyebrow reveal">
                         OPERATIONS • PROCESS SAFETY • INDUSTRIAL OPERATIONS
                     </p>
 
-                    <h1>
+                    <h1 class="reveal">
                         Ahmed Saied<br>
                         <span>Hawash</span>
                     </h1>
 
-                    <h2>
+                    <h2 class="reveal">
                         Operations Technician at Ezz Steel
                     </h2>
 
-                    <p class="hero-description">
+                    <p class="hero-description reveal">
                         Industrial operations professional with experience
                         across Oil & Gas and heavy industry, with a focus on
                         field operations, control room operations, process
                         monitoring and safe plant operation.
                     </p>
 
-                    <div class="hero-buttons">
+                    <div class="hero-buttons reveal">
                         <a href="#career" class="btn btn-primary">
                             Explore My Career
                         </a>
@@ -121,7 +128,7 @@
                         </a>
                     </div>
 
-                    <div class="hero-links">
+                    <div class="hero-links reveal">
                         <a href="https://www.linkedin.com/in/ahmed-hawash/" target="_blank" rel="noopener noreferrer">
                             LinkedIn
                         </a>
@@ -136,10 +143,11 @@
                 </div>
 
 
-                <div class="hero-card">
+                <div class="hero-card reveal">
 
                     <div class="profile-image-wrap">
-                        <img src="images/ahmed-saied-hawash_profile.jpg" alt="Ahmed Saied Hawash" class="profile-image" loading="eager">
+                        <img src="images/ahmed-saied-hawash_profile.jpg" alt="Ahmed Saied Hawash" class="profile-image"
+                            loading="eager">
                     </div>
 
                     <div class="hero-card-info">
@@ -168,14 +176,14 @@
 
             <div class="container">
 
-                <div class="section-heading">
+                <div class="section-heading reveal">
                     <p class="section-label">ABOUT ME</p>
                     <h2>Professional Profile</h2>
                 </div>
 
                 <div class="about-grid">
 
-                    <div class="about-text">
+                    <div class="about-text reveal">
 
                         <p class="large-text">
                             I am an Operations Technician with more than
@@ -200,7 +208,7 @@
 
                     </div>
 
-                    <div class="about-side">
+                    <div class="about-side reveal">
 
                         <img src="images/about.jpg" alt="Ahmed Saied Hawash at work" class="about-photo" loading="lazy">
 
@@ -243,7 +251,7 @@
 
             <div class="container">
 
-                <div class="section-heading">
+                <div class="section-heading reveal">
                     <p class="section-label">CAREER</p>
                     <h2>Professional Experience</h2>
                 </div>
@@ -251,7 +259,7 @@
                 <div class="timeline">
 
                     <!-- EZZ STEEL -->
-                    <article class="timeline-item">
+                    <article class="timeline-item reveal">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
 
@@ -281,7 +289,7 @@
 
 
                     <!-- ABU QIR -->
-                    <article class="timeline-item">
+                    <article class="timeline-item reveal">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
 
@@ -321,7 +329,7 @@
 
 
                     <!-- INDUSTRIAL CHEMICAL PARK -->
-                    <article class="timeline-item">
+                    <article class="timeline-item reveal">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
 
@@ -361,15 +369,18 @@
 
             <div class="container">
 
-                <div class="section-heading">
+                <div class="section-heading reveal">
                     <p class="section-label">CERTIFICATIONS</p>
                     <h2>Professional Certifications</h2>
+                    <p class="section-subtext">
+                        Click any certificate preview to enlarge it.
+                    </p>
                 </div>
 
-                <div class="cards-grid">
+                <div class="cards-grid" id="certGrid">
 
                     <!-- BOSIET -->
-                    <article class="cert-card">
+                    <article class="cert-card reveal">
 
                         <div class="cert-head">
                             <div class="cert-icon">
@@ -382,7 +393,8 @@
                             </div>
                         </div>
 
-                        <div class="cert-preview" role="button" tabindex="0" aria-label="View BOSIET certificate preview">
+                        <div class="cert-preview" role="button" tabindex="0"
+                            aria-label="View BOSIET certificate preview">
                             <img src="images/cert-bosiet.jpg" alt="BOSIET + HUET Certificate Preview" loading="lazy">
                             <span class="cert-zoom">🔍</span>
                         </div>
@@ -395,7 +407,7 @@
 
 
                     <!-- OSHA -->
-                    <article class="cert-card">
+                    <article class="cert-card reveal">
 
                         <div class="cert-head">
                             <div class="cert-icon">
@@ -421,7 +433,7 @@
 
 
                     <!-- LIFE SAVING -->
-                    <article class="cert-card">
+                    <article class="cert-card reveal">
 
                         <div class="cert-head">
                             <div class="cert-icon">
@@ -434,8 +446,10 @@
                             </div>
                         </div>
 
-                        <div class="cert-preview" role="button" tabindex="0" aria-label="View Life Saving Rules certificate preview">
-                            <img src="images/cert-life-saving.jpg" alt="Life Saving Rules Certificate Preview" loading="lazy">
+                        <div class="cert-preview" role="button" tabindex="0"
+                            aria-label="View Life Saving Rules certificate preview">
+                            <img src="images/cert-life-saving.jpg" alt="Life Saving Rules Certificate Preview"
+                                loading="lazy">
                             <span class="cert-zoom">🔍</span>
                         </div>
 
@@ -447,11 +461,12 @@
 
 
                     <!-- PETROLEUM FUNDAMENTALS -->
-                    <article class="cert-card">
+                    <article class="cert-card reveal">
 
                         <div class="cert-head">
                             <div class="cert-icon">
-                                <img src="images/petroleum-logo.png" alt="Petroleum Industry Training Logo" loading="lazy">
+                                <img src="images/petroleum-logo.png" alt="Petroleum Industry Training Logo"
+                                    loading="lazy">
                             </div>
                             <div>
                                 <h3>Petroleum Industry Fundamentals</h3>
@@ -460,12 +475,15 @@
                             </div>
                         </div>
 
-                        <div class="cert-preview" role="button" tabindex="0" aria-label="View Petroleum Industry certificate preview">
-                            <img src="images/cert-petroleum.jpg" alt="Petroleum Industry Fundamentals Certificate Preview" loading="lazy">
+                        <div class="cert-preview" role="button" tabindex="0"
+                            aria-label="View Petroleum Industry certificate preview">
+                            <img src="images/cert-petroleum.jpg"
+                                alt="Petroleum Industry Fundamentals Certificate Preview" loading="lazy">
                             <span class="cert-zoom">🔍</span>
                         </div>
 
-                        <a href="certificates/Petroleum-Industry-Fundamentals.pdf" target="_blank" rel="noopener" class="card-link">
+                        <a href="certificates/Petroleum-Industry-Fundamentals.pdf" target="_blank" rel="noopener"
+                            class="card-link">
                             View Certificate (PDF) →
                         </a>
 
@@ -473,7 +491,7 @@
 
 
                     <!-- CYBERSECURITY -->
-                    <article class="cert-card">
+                    <article class="cert-card reveal">
 
                         <div class="cert-head">
                             <div class="cert-icon">
@@ -486,8 +504,10 @@
                             </div>
                         </div>
 
-                        <div class="cert-preview" role="button" tabindex="0" aria-label="View Cybersecurity certificate preview">
-                            <img src="images/cert-cybersecurity.jpg" alt="Cybersecurity 101 Certificate Preview" loading="lazy">
+                        <div class="cert-preview" role="button" tabindex="0"
+                            aria-label="View Cybersecurity certificate preview">
+                            <img src="images/cert-cybersecurity.jpg" alt="Cybersecurity 101 Certificate Preview"
+                                loading="lazy">
                             <span class="cert-zoom">🔍</span>
                         </div>
 
@@ -510,12 +530,12 @@
 
             <div class="container">
 
-                <div class="section-heading">
+                <div class="section-heading reveal">
                     <p class="section-label">EDUCATION</p>
                     <h2>Education & Training</h2>
                 </div>
 
-                <div class="education-card">
+                <div class="education-card reveal">
 
                     <div class="education-year">2020</div>
 
@@ -528,4 +548,221 @@
                         <p>El-Wardian Advanced Technical Industrial School</p>
 
                         <div class="education-stats">
-                            <span>
+                            <span>Excellent</span>
+                            <span>88.1% Aggregate</span>
+                            <span>8th among Petrochemical Students</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SKILLS ================= -->
+
+        <section class="section" id="skills">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <p class="section-label">SKILLS</p>
+                    <h2>Technical Skills</h2>
+                </div>
+
+                <div class="skills-grid">
+
+                    <div class="skill-group reveal">
+                        <h3>Operations</h3>
+                        <div class="skill-list">
+                            <span>Field Operations</span>
+                            <span>Control Room Operations</span>
+                            <span>Process Monitoring</span>
+                            <span>Troubleshooting</span>
+                            <span>Startup & Shutdown</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-group reveal">
+                        <h3>Control Systems</h3>
+                        <div class="skill-list">
+                            <span>Emerson DeltaV</span>
+                            <span>ICSS</span>
+                            <span>SCADA</span>
+                            <span>Fire & Gas</span>
+                            <span>ESD / PSD / LSD</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-group reveal">
+                        <h3>Process Safety</h3>
+                        <div class="skill-list">
+                            <span>PTW</span>
+                            <span>LOTO</span>
+                            <span>PSSR</span>
+                            <span>H₂S</span>
+                            <span>Cause & Effect</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-group reveal">
+                        <h3>Engineering Documents</h3>
+                        <div class="skill-list">
+                            <span>PFD</span>
+                            <span>P&ID</span>
+                            <span>Operating Procedures</span>
+                            <span>Process Documentation</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-group reveal">
+                        <h3>Digital Skills</h3>
+                        <div class="skill-list">
+                            <span>Python</span>
+                            <span>C / C++</span>
+                            <span>C#</span>
+                            <span>Excel VBA</span>
+                            <span>Google Apps Script</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-group reveal">
+                        <h3>Current Technical Focus</h3>
+                        <div class="skill-list">
+                            <span>DRI</span>
+                            <span>MIDREX</span>
+                            <span>Reduction Gas</span>
+                            <span>Reforming</span>
+                            <span>Gas Recycling</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CV ================= -->
+
+        <section class="section section-dark" id="cv">
+
+            <div class="container cv-section reveal">
+
+                <div>
+
+                    <p class="section-label">CURRICULUM VITAE</p>
+
+                    <h2>View My CV</h2>
+
+                    <p>
+                        Download or view my current professional CV
+                        containing my complete experience, education,
+                        certifications and technical skills.
+                    </p>
+
+                </div>
+
+                <a href="cv/Ahmed-Saied-Hawash-CV.pdf" target="_blank" rel="noopener" class="btn btn-primary">
+                    View CV →
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACT ================= -->
+
+        <section class="section" id="contact">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <p class="section-label">CONTACT</p>
+                    <h2>Find Me Online</h2>
+                </div>
+
+                <div class="contact-grid">
+
+                    <a href="https://www.linkedin.com/in/ahmed-hawash/" target="_blank" rel="noopener noreferrer"
+                        class="contact-card reveal">
+                        <span class="contact-icon">in</span>
+                        <div>
+                            <h3>LinkedIn</h3>
+                            <p>Professional profile</p>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/ahmedsaiedhawash" target="_blank" rel="noopener noreferrer"
+                        class="contact-card reveal">
+                        <span class="contact-icon">GH</span>
+                        <div>
+                            <h3>GitHub</h3>
+                            <p>Code & projects</p>
+                        </div>
+                    </a>
+
+                    <a href="mailto:ahmed.saied.hawash@gmail.com" class="contact-card reveal">
+                        <span class="contact-icon">@</span>
+                        <div>
+                            <h3>Email</h3>
+                            <p>Get in touch</p>
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <p>
+                © <span id="currentYear"></span> Ahmed Saied Hawash
+            </p>
+
+            <p>
+                Operations Technician • Ezz Steel
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= BACK TO TOP ================= -->
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        ↑
+    </button>
+
+
+    <!-- ================= CERTIFICATE LIGHTBOX ================= -->
+
+    <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Certificate preview">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close preview">✕</button>
+        <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous certificate">‹</button>
+        <img src="" alt="" id="lightboxImage">
+        <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next certificate">›</button>
+        <div class="lightbox-counter" id="lightboxCounter"></div>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
