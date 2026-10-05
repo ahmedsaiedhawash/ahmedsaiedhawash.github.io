@@ -1,4 +1,37 @@
 // =========================
+// THEME TOGGLE (DARK MODE)
+// =========================
+
+const themeToggle = document.getElementById("themeToggle");
+const htmlElement = document.documentElement;
+
+// Restore saved theme or detect system preference
+(function initTheme() {
+    const savedTheme = localStorage.getItem("theme");
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+    if (savedTheme === "dark" || (!savedTheme && prefersDark)) {
+        htmlElement.setAttribute("data-theme", "dark");
+    }
+})();
+
+if (themeToggle) {
+    themeToggle.addEventListener("click", () => {
+
+        const isDark = htmlElement.getAttribute("data-theme") === "dark";
+
+        if (isDark) {
+            htmlElement.removeAttribute("data-theme");
+            localStorage.setItem("theme", "light");
+        } else {
+            htmlElement.setAttribute("data-theme", "dark");
+            localStorage.setItem("theme", "dark");
+        }
+    });
+}
+
+
+// =========================
 // MOBILE NAVIGATION
 // =========================
 
@@ -114,10 +147,14 @@ if (sections.length && navigationLinks.length) {
                 });
 
                 navigationLinks.forEach(link => {
-                    link.classList.toggle(
-                        "active",
-                        link.getAttribute("href") === `#${currentSection}`
-                    );
+                    const isActive = link.getAttribute("href") === `#${currentSection}`;
+                    link.classList.toggle("active", isActive);
+
+                    if (isActive) {
+                        link.setAttribute("aria-current", "page");
+                    } else {
+                        link.removeAttribute("aria-current");
+                    }
                 });
 
                 navTicking = false;
@@ -157,7 +194,6 @@ if (revealElements.length && "IntersectionObserver" in window) {
     revealElements.forEach(el => revealObserver.observe(el));
 
 } else {
-    // Fallback for very old browsers
     revealElements.forEach(el => el.classList.add("revealed"));
 }
 
@@ -229,7 +265,6 @@ function updateLightbox(index) {
             `${currentIndex + 1} / ${previews.length}`;
     }
 
-    // Toggle nav buttons visibility
     const many = previews.length > 1;
     if (lightboxPrev) lightboxPrev.style.display = many ? "grid" : "none";
     if (lightboxNext) lightboxNext.style.display = many ? "grid" : "none";
@@ -303,7 +338,6 @@ document.addEventListener("keydown", (e) => {
 // =========================
 // DYNAMIC CERTIFICATE PREVIEW
 // =========================
-// يضيف كلاس حسب اتجاه الصورة لضبط أبعاد المعاينة بشكل أفضل
 
 document.querySelectorAll(".cert-preview img").forEach(img => {
 
@@ -341,6 +375,7 @@ document.querySelectorAll(".cert-preview img").forEach(img => {
     }
 
 });
+
 
 // =========================
 // FLOATING WHATSAPP — DELAYED APPEARANCE

@@ -15,10 +15,11 @@ html {
 
 body {
     font-family: "Inter", Arial, sans-serif;
-    background: #ffffff;
-    color: #172033;
+    background: var(--bg);
+    color: var(--text);
     line-height: 1.7;
     overflow-x: hidden;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 a {
@@ -41,27 +42,32 @@ button {
 
 
 /* =========================
-   VARIABLES
+   VARIABLES — LIGHT THEME
 ========================= */
 
 :root {
+    --bg: #ffffff;
+    --bg-elevated: #ffffff;
+    --header-bg: rgba(255, 255, 255, 0.92);
+    --card-bg: #ffffff;
+    --text: #172033;
+    --muted: #667085;
+    --light: #f5f7fa;
+    --border: #e5e9f0;
+
     --primary: #0b63ce;
     --primary-dark: #084a99;
     --primary-light: #eaf3ff;
     --dark: #101827;
     --dark-2: #172235;
-    --text: #172033;
-    --muted: #667085;
-    --light: #f5f7fa;
-    --border: #e5e9f0;
     --white: #ffffff;
 
-    /* Brand colors */
     --facebook: #1877F2;
     --linkedin: #0A66C2;
     --github: #181717;
     --instagram: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
     --instagram-solid: #E1306C;
+    --twitter: #000000;
     --email: #EA4335;
     --phone: #34A853;
     --whatsapp: #25D366;
@@ -72,6 +78,52 @@ button {
     --shadow-lg: 0 20px 60px rgba(16, 24, 39, 0.08);
     --shadow-xl: 0 30px 80px rgba(16, 24, 39, 0.12);
     --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --hero-bg:
+        radial-gradient(circle at 80% 20%, #eaf3ff 0%, transparent 40%),
+        radial-gradient(circle at 10% 90%, #f0f6ff 0%, transparent 30%),
+        linear-gradient(135deg, #ffffff 0%, #f6f9fd 100%);
+
+    --checker-1: #f5f7fa;
+    --checker-2: #ffffff;
+}
+
+
+/* =========================
+   VARIABLES — DARK THEME
+========================= */
+
+[data-theme="dark"] {
+    --bg: #0a0f1a;
+    --bg-elevated: #131b2c;
+    --header-bg: rgba(10, 15, 26, 0.92);
+    --card-bg: #131b2c;
+    --text: #e5e9f0;
+    --muted: #98a2b3;
+    --light: #0f1826;
+    --border: #243047;
+
+    --primary: #4ea2ff;
+    --primary-dark: #2b7de0;
+    --primary-light: #16243d;
+    --dark: #060a12;
+    --dark-2: #0a0f1a;
+    --white: #ffffff;
+
+    --twitter: #ffffff;
+
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 15px 35px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.5);
+    --shadow-xl: 0 30px 80px rgba(0, 0, 0, 0.6);
+
+    --hero-bg:
+        radial-gradient(circle at 80% 20%, #16243d 0%, transparent 40%),
+        radial-gradient(circle at 10% 90%, #0f1826 0%, transparent 30%),
+        linear-gradient(135deg, #0a0f1a 0%, #0d1524 100%);
+
+    --checker-1: #1a2438;
+    --checker-2: #131b2c;
 }
 
 
@@ -209,10 +261,11 @@ button {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: rgba(255, 255, 255, 0.92);
+    background: var(--header-bg);
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
     border-bottom: 1px solid var(--border);
+    transition: background 0.3s ease;
 }
 
 .navbar {
@@ -220,6 +273,12 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 4px;
 }
 
 .logo {
@@ -248,7 +307,7 @@ button {
 .nav-links a {
     font-size: 0.88rem;
     font-weight: 600;
-    color: #475467;
+    color: var(--muted);
     transition: color var(--transition);
     position: relative;
     padding: 4px 0;
@@ -286,6 +345,46 @@ button {
 
 
 /* =========================
+   THEME TOGGLE
+========================= */
+
+.theme-toggle {
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    border: none;
+    background: transparent;
+    color: var(--text);
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background var(--transition), color var(--transition), transform var(--transition);
+}
+
+.theme-toggle:hover {
+    background: var(--light);
+    transform: scale(1.05);
+}
+
+.theme-toggle .icon-moon,
+.theme-toggle .icon-sun {
+    display: block;
+}
+
+.theme-toggle .icon-sun {
+    display: none;
+}
+
+[data-theme="dark"] .theme-toggle .icon-moon {
+    display: none;
+}
+
+[data-theme="dark"] .theme-toggle .icon-sun {
+    display: block;
+}
+
+
+/* =========================
    HERO
 ========================= */
 
@@ -293,12 +392,10 @@ button {
     min-height: calc(100vh - 70px);
     display: flex;
     align-items: center;
-    background:
-        radial-gradient(circle at 80% 20%, #eaf3ff 0%, transparent 40%),
-        radial-gradient(circle at 10% 90%, #f0f6ff 0%, transparent 30%),
-        linear-gradient(135deg, #ffffff 0%, #f6f9fd 100%);
+    background: var(--hero-bg);
     position: relative;
     overflow: hidden;
+    transition: background 0.3s ease;
 }
 
 .hero-content {
@@ -331,7 +428,7 @@ button {
 .hero h2 {
     font-size: clamp(1.2rem, 3vw, 1.8rem);
     font-weight: 600;
-    color: #344054;
+    color: var(--text);
     margin-bottom: 22px;
 }
 
@@ -373,7 +470,7 @@ button {
 
 .btn-primary {
     background: var(--primary);
-    color: var(--white);
+    color: #ffffff;
 }
 
 .btn-primary:hover {
@@ -382,7 +479,7 @@ button {
 
 .btn-secondary {
     border: 1px solid var(--border);
-    background: var(--white);
+    background: var(--card-bg);
     color: var(--text);
 }
 
@@ -393,6 +490,7 @@ button {
 
 .hero-links {
     display: flex;
+    flex-wrap: wrap;
     gap: 12px;
     margin-top: 28px;
     color: var(--muted);
@@ -409,11 +507,11 @@ button {
 
 .hero-card {
     padding: 24px;
-    background: var(--white);
+    background: var(--card-bg);
     border: 1px solid var(--border);
     border-radius: 18px;
     box-shadow: var(--shadow-lg);
-    transition: transform var(--transition), box-shadow var(--transition);
+    transition: transform var(--transition), box-shadow var(--transition), background 0.3s ease;
 }
 
 .hero-card:hover {
@@ -458,7 +556,7 @@ button {
     align-items: center;
     gap: 8px;
     margin-top: 15px;
-    color: #475467;
+    color: var(--muted);
     font-size: 0.8rem;
 }
 
@@ -532,7 +630,7 @@ button {
     border: 1px solid var(--border);
     border-radius: 14px;
     overflow: hidden;
-    background: var(--white);
+    background: var(--card-bg);
     box-shadow: var(--shadow-sm);
 }
 
@@ -559,6 +657,7 @@ button {
 
 .info-item strong {
     font-size: 0.95rem;
+    color: var(--text);
 }
 
 
@@ -682,11 +781,12 @@ button {
     padding: 22px;
     border: 1px solid var(--border);
     border-radius: 14px;
-    background: var(--white);
+    background: var(--card-bg);
     transition:
         transform var(--transition),
         box-shadow var(--transition),
-        border-color var(--transition);
+        border-color var(--transition),
+        background 0.3s ease;
 }
 
 .cert-card:hover {
@@ -725,7 +825,7 @@ button {
 }
 
 .cert-head p {
-    color: #475467;
+    color: var(--muted);
     font-size: 0.85rem;
 }
 
@@ -747,11 +847,11 @@ button {
     border-radius: 10px;
     border: 1px solid var(--border);
     background:
-        linear-gradient(45deg, #f5f7fa 25%, transparent 25%),
-        linear-gradient(-45deg, #f5f7fa 25%, transparent 25%),
-        linear-gradient(45deg, transparent 75%, #f5f7fa 75%),
-        linear-gradient(-45deg, transparent 75%, #f5f7fa 75%),
-        #ffffff;
+        linear-gradient(45deg, var(--checker-1) 25%, transparent 25%),
+        linear-gradient(-45deg, var(--checker-1) 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, var(--checker-1) 75%),
+        linear-gradient(-45deg, transparent 75%, var(--checker-1) 75%),
+        var(--checker-2);
     background-size: 12px 12px;
     background-position: 0 0, 0 6px, 6px -6px, -6px 0;
     cursor: zoom-in;
@@ -931,11 +1031,11 @@ button {
     grid-template-columns: 120px 1fr;
     gap: 40px;
     padding: 40px;
-    background: var(--white);
+    background: var(--card-bg);
     border: 1px solid var(--border);
     border-radius: 16px;
     box-shadow: var(--shadow-sm);
-    transition: transform var(--transition), box-shadow var(--transition);
+    transition: transform var(--transition), box-shadow var(--transition), background 0.3s ease;
 }
 
 .education-card:hover {
@@ -955,7 +1055,7 @@ button {
 
 .education-card h4 {
     font-size: 1rem;
-    color: #475467;
+    color: var(--muted);
     margin-bottom: 8px;
 }
 
@@ -974,7 +1074,7 @@ button {
     padding: 6px 10px;
     border-radius: 6px;
     background: var(--light);
-    color: #475467;
+    color: var(--muted);
     font-size: 0.75rem;
     transition: background var(--transition), color var(--transition);
 }
@@ -999,7 +1099,8 @@ button {
     padding: 28px;
     border: 1px solid var(--border);
     border-radius: 14px;
-    transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+    background: var(--card-bg);
+    transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition), background 0.3s ease;
 }
 
 .skill-group:hover {
@@ -1023,7 +1124,7 @@ button {
     padding: 7px 11px;
     background: var(--light);
     border-radius: 6px;
-    color: #475467;
+    color: var(--muted);
     font-size: 0.78rem;
     transition: background var(--transition), color var(--transition);
     cursor: default;
@@ -1075,7 +1176,7 @@ button {
     padding: 22px;
     border: 1px solid var(--border);
     border-radius: 14px;
-    background: var(--white);
+    background: var(--card-bg);
     transition:
         transform var(--transition),
         border-color var(--transition),
@@ -1138,7 +1239,6 @@ button {
 
 /* ===== Brand-specific colors ===== */
 
-/* Facebook */
 .contact-facebook .contact-icon {
     background: #1877F2;
 }
@@ -1151,8 +1251,6 @@ button {
     border-color: rgba(24, 119, 242, 0.35);
 }
 
-
-/* LinkedIn */
 .contact-linkedin .contact-icon {
     background: #0A66C2;
 }
@@ -1165,8 +1263,6 @@ button {
     border-color: rgba(10, 102, 194, 0.35);
 }
 
-
-/* GitHub */
 .contact-github .contact-icon {
     background: #181717;
 }
@@ -1179,8 +1275,10 @@ button {
     border-color: rgba(24, 23, 23, 0.35);
 }
 
+[data-theme="dark"] .contact-github .contact-icon {
+    background: #2d2d2d;
+}
 
-/* Instagram */
 .contact-instagram .contact-icon {
     background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
 }
@@ -1193,8 +1291,23 @@ button {
     border-color: rgba(225, 48, 108, 0.35);
 }
 
+.contact-twitter .contact-icon {
+    background: #000000;
+}
 
-/* Email */
+.contact-twitter::before {
+    background: #000000;
+}
+
+.contact-twitter:hover {
+    border-color: rgba(0, 0, 0, 0.35);
+}
+
+[data-theme="dark"] .contact-twitter .contact-icon {
+    background: #1a1a1a;
+    color: #ffffff;
+}
+
 .contact-email .contact-icon {
     background: #EA4335;
 }
@@ -1207,8 +1320,6 @@ button {
     border-color: rgba(234, 67, 53, 0.35);
 }
 
-
-/* Phone */
 .contact-phone .contact-icon {
     background: #34A853;
 }
@@ -1503,7 +1614,7 @@ button {
 
         padding: 16px 20px 24px;
 
-        background: white;
+        background: var(--card-bg);
         border-bottom: 1px solid var(--border);
         box-shadow: 0 15px 25px rgba(0, 0, 0, 0.06);
 
@@ -1587,7 +1698,6 @@ button {
         height: 42px;
     }
 
-    /* WhatsApp banner stack */
     .whatsapp-banner {
         flex-direction: column;
         text-align: center;
@@ -1600,7 +1710,6 @@ button {
         text-align: center;
     }
 
-    /* Floating WhatsApp smaller */
     .floating-whatsapp {
         left: 14px;
         bottom: 14px;
@@ -1673,13 +1782,15 @@ button {
     .hero-buttons,
     .hero-links,
     .card-link,
-    .whatsapp-banner {
+    .whatsapp-banner,
+    .theme-toggle {
         display: none !important;
     }
 
     body {
         font-size: 12pt;
         color: black;
+        background: white;
     }
 
     .section {
