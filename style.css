@@ -108,6 +108,7 @@ img {
     z-index: 1000;
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border);
 }
 
@@ -133,7 +134,7 @@ img {
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 28px;
+    gap: 24px;
 }
 
 .nav-links a {
@@ -141,10 +142,23 @@ img {
     font-weight: 600;
     color: #475467;
     transition: color 0.2s ease;
+    position: relative;
 }
 
-.nav-links a:hover {
+.nav-links a:hover,
+.nav-links a.active {
     color: var(--primary);
+}
+
+.nav-links a.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -6px;
+    height: 2px;
+    background: var(--primary);
+    border-radius: 2px;
 }
 
 .menu-toggle {
@@ -263,27 +277,29 @@ img {
 }
 
 .hero-card {
-    padding: 30px;
+    padding: 24px;
     background: var(--white);
     border: 1px solid var(--border);
     border-radius: 18px;
     box-shadow: 0 20px 60px rgba(16, 24, 39, 0.08);
 }
 
-.profile-placeholder {
+.profile-image-wrap {
     aspect-ratio: 1;
-    display: grid;
-    place-items: center;
     border-radius: 14px;
-    background:
-        linear-gradient(135deg, #101827, #253b5c);
-    color: white;
-    font-size: 4rem;
-    font-weight: 800;
+    overflow: hidden;
+    background: linear-gradient(135deg, #101827, #253b5c);
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .hero-card-info {
-    padding-top: 25px;
+    padding-top: 22px;
 }
 
 .hero-card-info h3 {
@@ -318,30 +334,46 @@ img {
 
 .about-grid {
     display: grid;
-    grid-template-columns: 1.3fr 0.7fr;
-    gap: 70px;
+    grid-template-columns: 1.3fr 0.9fr;
+    gap: 60px;
     align-items: start;
 }
 
-.about-grid p {
+.about-text p {
     color: var(--muted);
     margin-bottom: 20px;
 }
 
-.about-grid .large-text {
+.about-text .large-text {
     color: var(--text);
     font-size: 1.3rem;
     line-height: 1.6;
+}
+
+.about-side {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.about-photo {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    box-shadow: 0 15px 35px rgba(16, 24, 39, 0.06);
 }
 
 .info-card {
     border: 1px solid var(--border);
     border-radius: 14px;
     overflow: hidden;
+    background: var(--white);
 }
 
 .info-item {
-    padding: 20px 22px;
+    padding: 18px 22px;
     border-bottom: 1px solid var(--border);
 }
 
@@ -459,16 +491,17 @@ img {
 .cards-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 18px;
+    gap: 20px;
 }
 
 .cert-card {
     display: flex;
-    gap: 20px;
-    padding: 25px;
+    flex-direction: column;
+    gap: 16px;
+    padding: 22px;
     border: 1px solid var(--border);
     border-radius: 14px;
-    align-items: center;
+    background: var(--white);
     transition:
         transform 0.2s ease,
         box-shadow 0.2s ease;
@@ -477,6 +510,12 @@ img {
 .cert-card:hover {
     transform: translateY(-3px);
     box-shadow: 0 15px 35px rgba(16, 24, 39, 0.07);
+}
+
+.cert-head {
+    display: flex;
+    align-items: center;
+    gap: 16px;
 }
 
 .cert-icon {
@@ -497,21 +536,62 @@ img {
     object-fit: contain;
 }
 
-.cert-card h3 {
+.cert-head h3 {
     font-size: 1rem;
     margin-bottom: 3px;
 }
 
-.cert-card p {
+.cert-head p {
     color: #475467;
-    font-size: 0.88rem;
+    font-size: 0.85rem;
 }
 
-.cert-card small {
+.cert-head small {
     display: block;
     color: var(--muted);
-    font-size: 0.75rem;
-    margin-top: 7px;
+    font-size: 0.72rem;
+    margin-top: 4px;
+}
+
+.cert-preview {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    background: var(--light);
+    cursor: zoom-in;
+}
+
+.cert-preview img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.cert-preview:hover img {
+    transform: scale(1.04);
+}
+
+.cert-zoom {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 34px;
+    height: 34px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: rgba(16, 24, 39, 0.75);
+    color: white;
+    font-size: 0.85rem;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.cert-preview:hover .cert-zoom {
+    opacity: 1;
 }
 
 .card-link {
@@ -519,7 +599,57 @@ img {
     color: var(--primary);
     font-size: 0.8rem;
     font-weight: 700;
-    margin-top: 12px;
+    margin-top: auto;
+}
+
+.card-link:hover {
+    color: var(--primary-dark);
+}
+
+
+/* =========================
+   LIGHTBOX
+========================= */
+
+.lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(8, 12, 20, 0.92);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    padding: 30px;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.lightbox img {
+    max-width: 100%;
+    max-height: 90vh;
+    border-radius: 10px;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255, 255, 255, 0.12);
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.lightbox-close:hover {
+    background: rgba(255, 255, 255, 0.22);
 }
 
 
@@ -648,11 +778,12 @@ img {
     padding: 25px;
     border: 1px solid var(--border);
     border-radius: 14px;
-    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
 .contact-card:hover {
     transform: translateY(-3px);
+    border-color: var(--primary);
 }
 
 .contact-icon {
@@ -755,10 +886,15 @@ img {
 
         background: white;
         border-bottom: 1px solid var(--border);
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.06);
     }
 
     .nav-links.active {
         display: flex;
+    }
+
+    .nav-links a.active::after {
+        display: none;
     }
 
     .hero {
@@ -785,5 +921,22 @@ img {
 
     .footer-content {
         flex-direction: column;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .timeline-item {
+        padding-left: 30px;
+        padding-bottom: 50px;
+    }
+
+    .timeline-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .timeline-content h4 {
+        font-size: 0.9rem;
     }
 }
