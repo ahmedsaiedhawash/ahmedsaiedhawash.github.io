@@ -341,3 +341,20 @@ document.querySelectorAll(".cert-preview img").forEach(img => {
     }
 
 });
+
+// =========================
+// FLOATING WHATSAPP — DELAYED APPEARANCE
+// =========================
+
+const floatingWhatsapp = document.querySelector(".floating-whatsapp");
+
+if (floatingWhatsapp) {
+    floatingWhatsapp.style.opacity = "0";
+    floatingWhatsapp.style.transform = "scale(0.5)";
+    floatingWhatsapp.style.transition = "opacity 0.4s ease, transform 0.4s cubic-bezier(0.4, 0, 0.2, 1)";
+
+    setTimeout(() => {
+        floatingWhatsapp.style.opacity = "1";
+        floatingWhatsapp.style.transform = "scale(1)";
+    }, 1200);
+}
