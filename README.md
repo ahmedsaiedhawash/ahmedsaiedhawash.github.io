@@ -40,3 +40,6 @@
 3. سجّل في [Google Search Console](https://search.google.com/search-console)
 4. أضف `sitemap.xml` في Search Console
 5. اختبر الصور في [Rich Results Test](https://search.google.com/test/rich-results)
+
+
+## HAWASHTECH
