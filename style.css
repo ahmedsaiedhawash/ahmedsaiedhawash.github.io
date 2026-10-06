@@ -856,17 +856,6 @@ button {
     flex-shrink: 0;
 }
 
-@media (max-width: 500px) {
-    .timeline-header {
-        flex-direction: column-reverse;
-        align-items: flex-start;
-    }
-
-    .company-logo {
-        height: 45px;
-    }
-}
-
 
 /* =========================
    CERTIFICATIONS
@@ -1662,7 +1651,7 @@ button {
 
 
 /* =========================
-   RESPONSIVE
+   RESPONSIVE (GENERAL)
 ========================= */
 
 @media (max-width: 900px) {
@@ -1830,19 +1819,6 @@ button {
 
 @media (max-width: 500px) {
 
-    .timeline-item {
-        padding-left: 30px;
-        padding-bottom: 50px;
-    }
-
-    .timeline-content h3 {
-        font-size: 1.2rem;
-    }
-
-    .timeline-content h4 {
-        font-size: 0.9rem;
-    }
-
     .cert-preview {
         min-height: 180px;
         max-height: 380px;
@@ -1957,52 +1933,64 @@ html[dir="rtl"] .hero h1 {
     letter-spacing: 0;
 }
 
+
 /* =========================
-   MOBILE RESPONSIVENESS FIXES (CAREER SECTION)
+   MOBILE FIXES FOR CAREER SECTION (CLEAN & FINAL)
 ========================= */
 
 @media (max-width: 768px) {
 
-    /* 1. إلغاء شكل الخط الزمني على الموبايل */
+    /* 1. إلغاء الخط الزمني والنقاط تماماً */
+    html[dir="rtl"] .timeline::before,
     .timeline::before {
-        display: none; /* إخفاء الخط الرأسي */
+        display: none !important;
     }
 
-    .timeline-item {
-        padding-left: 0 !important; /* إلغاء المسافة اليسرى */
-        padding-right: 0 !important; /* إلغاء المسافة اليمنى (للعربية) */
-        padding-bottom: 25px; /* مسافة بين البطاقات */
-    }
-
+    html[dir="rtl"] .timeline-dot,
     .timeline-dot {
-        display: none; /* إخفاء النقطة الزرقاء */
+        display: none !important;
     }
 
-    /* 2. تحويل الخبرة إلى بطاقة مستقلة */
+    /* 2. تحويل الخبرة إلى بطاقة كاملة العرض */
+    html[dir="rtl"] .timeline-item,
+    .timeline-item {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        padding-bottom: 20px;
+    }
+
+    /* 3. جعل الصورة ديناميكية (تظهر كاملة) مع خلفية داكنة */
     .experience-bg .timeline-content {
-        padding: 20px; /* تقليل الحواف الداخلية */
+        padding: 18px;
         border-radius: 12px;
+        background-color: #0a0f1a;
+        /* خلفية داكنة لملء الفراغ حول الصورة */
+        min-height: auto;
     }
 
-    /* 3. زيادة تعتيم الخلفية لتحسين قراءة النص */
     .experience-bg .timeline-content::before {
-        filter: blur(2px) brightness(0.2) !important; /* تعتيم أقوى للموبايل */
+        background-size: contain !important;
+        /* إظهار الصورة كاملة */
+        background-color: #0a0f1a;
+        background-position: center;
+        filter: blur(1px) brightness(0.4) !important;
+        /* تقليل التمويه لرؤية الصورة */
     }
 
-    /* 4. إعادة ترتيب الهيدر (اللوجو والنص) */
+    /* 4. إعادة ترتيب الهيدر (اللوجو في الأعلى، ثم النص) */
     .timeline-header {
-        flex-direction: column-reverse; /* اللوجو في الأعلى، ثم النص */
+        flex-direction: column-reverse;
         align-items: flex-start;
         gap: 12px;
     }
 
-    /* 5. تصغير حجم اللوجو ليكون متناسباً */
+    /* 5. ضبط حجم اللوجو ليناسب الموبايل */
     .company-logo {
-        height: 40px; /* حجم أصغر للموبايل */
+        height: 45px;
         padding: 4px;
     }
 
-    /* 6. تحسين أحجام الخطوط والمسافات */
+    /* 6. تحسين أحجام النصوص والمسافات */
     .timeline-content h3 {
         font-size: 1.15rem;
         line-height: 1.3;
@@ -2014,13 +2002,17 @@ html[dir="rtl"] .hero h1 {
     }
 
     .timeline-content p {
-        font-size: 0.9rem;
+        font-size: 0.88rem;
         line-height: 1.6;
     }
 
     .experience-list {
-        margin: 15px 0 15px 15px !important; /* تقليل المسافة للقوائم */
-        font-size: 0.85rem;
+        margin: 15px 0 15px 15px !important;
+        font-size: 0.83rem;
+    }
+
+    html[dir="rtl"] .experience-list {
+        margin: 15px 15px 15px 0 !important;
     }
 
     .tags {
@@ -2029,14 +2021,12 @@ html[dir="rtl"] .hero h1 {
     }
 
     .tags span {
-        font-size: 0.65rem;
-        padding: 4px 8px;
+        font-size: 0.68rem;
+        padding: 4px 9px;
     }
-}
 
-/* تعديلات خاصة باللغة العربية على الموبايل */
-@media (max-width: 768px) {
-    html[dir="rtl"] .experience-list {
-        margin: 15px 15px 15px 0 !important; /* عكس اتجاه القائمة للعربية */
+    /* 7. إضافة مسافة سفلية حتى لا يغطي زر الواتساب النص */
+    .timeline {
+        padding-bottom: 70px;
     }
 }
