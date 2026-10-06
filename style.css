@@ -278,7 +278,7 @@ button {
 .header-actions {
     display: flex;
     align-items: center;
-    gap: 4px;
+    gap: 10px;
 }
 
 .logo {
@@ -345,34 +345,72 @@ button {
 
 
 /* =========================
-   THEME TOGGLE
+   LANGUAGE TOGGLE (NEW)
+========================= */
+
+.lang-toggle {
+    padding: 6px 14px;
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--text);
+    background: var(--card-bg);
+    transition: all var(--transition);
+    white-space: nowrap;
+    box-shadow: var(--shadow-sm);
+}
+
+.lang-toggle:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+    background: var(--primary-light);
+    transform: translateY(-1px);
+}
+
+
+/* =========================
+   THEME TOGGLE (UPDATED FOR CLARITY)
 ========================= */
 
 .theme-toggle {
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
     display: grid;
     place-items: center;
-    border: none;
-    background: transparent;
+    border: 2px solid var(--border);
+    background: var(--card-bg);
     color: var(--text);
     cursor: pointer;
-    border-radius: 8px;
-    transition: background var(--transition), color var(--transition), transform var(--transition);
+    border-radius: 50%;
+    transition: all var(--transition);
+    box-shadow: var(--shadow-sm);
 }
 
 .theme-toggle:hover {
-    background: var(--light);
-    transform: scale(1.05);
+    border-color: var(--primary);
+    color: var(--primary);
+    background: var(--primary-light);
+    transform: scale(1.08);
 }
 
-.theme-toggle .icon-moon,
-.theme-toggle .icon-sun {
-    display: block;
+.theme-toggle svg {
+    width: 22px;
+    height: 22px;
 }
 
 .theme-toggle .icon-sun {
     display: none;
+}
+
+[data-theme="dark"] .theme-toggle {
+    background: var(--bg-elevated);
+    border-color: var(--border);
+}
+
+[data-theme="dark"] .theme-toggle:hover {
+    border-color: var(--primary);
+    color: var(--primary);
 }
 
 [data-theme="dark"] .theme-toggle .icon-moon {
@@ -702,6 +740,7 @@ button {
     border: 3px solid var(--dark);
     box-shadow: 0 0 0 2px var(--primary);
     transition: transform var(--transition);
+    z-index: 2;
 }
 
 .timeline-item:hover .timeline-dot {
@@ -760,6 +799,72 @@ button {
 
 .tags span:hover {
     background: rgba(112, 174, 252, 0.2);
+}
+
+
+/* =========================
+   EXPERIENCE BACKGROUND (NEW)
+========================= */
+
+.experience-bg .timeline-content {
+    position: relative;
+    padding: 30px;
+    border-radius: 14px;
+    overflow: hidden;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.experience-bg .timeline-content::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: var(--bg-img);
+    background-size: cover;
+    background-position: center;
+    /* تأثير التمويه والإعتام لضمان وضوح النص */
+    filter: blur(3px) brightness(0.35);
+    z-index: 0;
+    transition: filter 0.3s ease;
+}
+
+[data-theme="dark"] .experience-bg .timeline-content::before {
+    filter: blur(3px) brightness(0.25);
+}
+
+.experience-bg .timeline-content>* {
+    position: relative;
+    z-index: 1;
+    /* لجعل النص فوق الخلفية */
+}
+
+.timeline-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.company-logo {
+    height: 55px;
+    width: auto;
+    background: #ffffff;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    flex-shrink: 0;
+}
+
+@media (max-width: 500px) {
+    .timeline-header {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+
+    .company-logo {
+        height: 45px;
+    }
 }
 
 
@@ -1783,7 +1888,8 @@ button {
     .hero-links,
     .card-link,
     .whatsapp-banner,
-    .theme-toggle {
+    .theme-toggle,
+    .lang-toggle {
         display: none !important;
     }
 
@@ -1812,4 +1918,41 @@ button {
         font-size: 0.75em;
         color: #666;
     }
+}
+
+
+/* =========================
+   RTL SPECIFIC STYLES (للموقع العربي)
+========================= */
+
+html[dir="rtl"] body {
+    font-family: "Cairo", "Inter", sans-serif;
+}
+
+html[dir="rtl"] .timeline::before {
+    left: auto;
+    right: 7px;
+}
+
+html[dir="rtl"] .timeline-item {
+    padding-left: 0;
+    padding-right: 45px;
+}
+
+html[dir="rtl"] .timeline-dot {
+    left: auto;
+    right: 0;
+}
+
+html[dir="rtl"] .card-link:hover {
+    transform: translateX(-4px);
+}
+
+html[dir="rtl"] .contact-card::before {
+    left: auto;
+    right: 0;
+}
+
+html[dir="rtl"] .hero h1 {
+    letter-spacing: 0;
 }
