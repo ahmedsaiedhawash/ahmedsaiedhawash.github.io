@@ -1935,7 +1935,7 @@ html[dir="rtl"] .hero h1 {
 
 
 /* =========================
-   MOBILE FIXES FOR CAREER SECTION (CLEAN & FINAL)
+   MOBILE FIXES FOR CAREER SECTION (FINAL - NO REPEAT)
 ========================= */
 
 @media (max-width: 768px) {
@@ -1959,7 +1959,7 @@ html[dir="rtl"] .hero h1 {
         padding-bottom: 20px;
     }
 
-    /* 3. جعل الصورة ديناميكية (تظهر كاملة) مع خلفية داكنة */
+    /* 3. جعل الصورة ديناميكية (تظهر كاملة) بدون تكرار */
     .experience-bg .timeline-content {
         padding: 18px;
         border-radius: 12px;
@@ -1971,10 +1971,14 @@ html[dir="rtl"] .hero h1 {
     .experience-bg .timeline-content::before {
         background-size: contain !important;
         /* إظهار الصورة كاملة */
+        background-repeat: no-repeat !important;
+        /* ★ منع تكرار الصورة */
+        background-position: center center !important;
+        /* ★ تمركز الصورة في المنتصف */
         background-color: #0a0f1a;
-        background-position: center;
-        filter: blur(1px) brightness(0.4) !important;
-        /* تقليل التمويه لرؤية الصورة */
+        /* لون الفراغ حول الصورة */
+        filter: blur(1px) brightness(0.5) !important;
+        /* تقليل التمويه لرؤية الصورة بوضوح */
     }
 
     /* 4. إعادة ترتيب الهيدر (اللوجو في الأعلى، ثم النص) */
