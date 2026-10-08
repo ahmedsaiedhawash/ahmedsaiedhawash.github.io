@@ -10,12 +10,20 @@
     <meta name="description"
         content="Ahmed Saied Hawash — Operations Technician at Ezz Steel, with experience in Oil & Gas Operations, Process Safety, DCS, ICSS and DRI/MIDREX operations.">
 
+    <meta name="keywords"
+        content="Ahmed Saied Hawash, Operations Technician, Ezz Steel, Oil and Gas, Process Safety, DCS, ICSS, DRI, MIDREX, Alexandria Egypt, فني عمليات">
+
     <meta name="author" content="Ahmed Saied Hawash">
 
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large">
 
     <meta name="theme-color" content="#0b63ce">
+
+    <!-- ================= HREFLANG (Multilingual SEO) ================= -->
+    <link rel="alternate" hreflang="en" href="https://ahmedsaiedhawash.github.io/" />
+    <link rel="alternate" hreflang="ar" href="https://ahmedsaiedhawash.github.io/ar.html" />
+    <link rel="alternate" hreflang="x-default" href="https://ahmedsaiedhawash.github.io/" />
 
     <!-- ================= OPEN GRAPH ================= -->
     <meta property="og:title" content="Ahmed Saied Hawash | Operations Technician">
@@ -29,6 +37,7 @@
     <meta property="og:image:alt" content="Ahmed Saied Hawash — Operations Technician">
     <meta property="og:site_name" content="Ahmed Saied Hawash">
     <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="ar_EG">
 
     <!-- ================= TWITTER CARD ================= -->
     <meta name="twitter:card" content="summary_large_image">
@@ -55,7 +64,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- ================= STRUCTURED DATA ================= -->
+    <!-- ================= STRUCTURED DATA (SEO) ================= -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -66,7 +75,17 @@
                 "url": "https://ahmedsaiedhawash.github.io/",
                 "name": "Ahmed Saied Hawash",
                 "description": "Operations Technician at Ezz Steel — Oil & Gas, DCS, Process Safety, DRI/MIDREX.",
-                "inLanguage": "en"
+                "inLanguage": "en",
+                "publisher": { "@id": "https://ahmedsaiedhawash.github.io/#person" }
+            },
+            {
+                "@type": "ProfilePage",
+                "@id": "https://ahmedsaiedhawash.github.io/#profilepage",
+                "url": "https://ahmedsaiedhawash.github.io/",
+                "name": "Ahmed Saied Hawash — Operations Technician",
+                "inLanguage": "en",
+                "isPartOf": { "@id": "https://ahmedsaiedhawash.github.io/#website" },
+                "mainEntity": { "@id": "https://ahmedsaiedhawash.github.io/#person" }
             },
             {
                 "@type": "Person",
@@ -79,6 +98,7 @@
                 "telephone": "+201091570288",
                 "worksFor": {
                     "@type": "Organization",
+                    "@id": "https://ahmedsaiedhawash.github.io/#organization",
                     "name": "Ezz Steel"
                 },
                 "address": {
@@ -99,6 +119,7 @@
                     "Reforming",
                     "Gas Recycling"
                 ],
+                "knowsLanguage": ["en", "ar"],
                 "sameAs": [
                     "https://www.facebook.com/AhmedSaiedHawash/",
                     "https://www.linkedin.com/in/ahmedsaiedhawash/",
@@ -106,6 +127,24 @@
                     "https://www.instagram.com/ahmedsaiedhawash/",
                     "https://twitter.com/ahmedsaiedhawash",
                     "https://wa.me/201091570288"
+                ]
+            },
+            {
+                "@type": "Organization",
+                "@id": "https://ahmedsaiedhawash.github.io/#organization",
+                "name": "Ezz Steel",
+                "url": "https://www.ezzsteel.com/"
+            },
+            {
+                "@type": "BreadcrumbList",
+                "@id": "https://ahmedsaiedhawash.github.io/#breadcrumb",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://ahmedsaiedhawash.github.io/"
+                    }
                 ]
             },
             {
@@ -137,21 +176,18 @@
 <body>
 
     <div class="progress-bar" id="progressBar" aria-hidden="true"></div>
-
     <a href="#home" class="skip-link">Skip to content</a>
 
 
     <!-- ================= NAVIGATION ================= -->
-
     <header class="header">
         <nav class="navbar container" aria-label="Main navigation">
 
             <a href="#home" class="logo">AH</a>
 
             <div class="header-actions">
-
-                <!-- زر تبديل اللغة -->
-                <a href="ar.html" class="lang-toggle" aria-label="Switch to Arabic">العربية</a>
+                <a href="ar.html" class="lang-toggle" aria-label="Switch to Arabic"
+                    data-i18n="nav.switch_lang">العربية</a>
 
                 <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme">
                     <svg class="icon-moon" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"
@@ -165,21 +201,19 @@
                     </svg>
                 </button>
 
-                <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false">
-                    ☰
-                </button>
-
+                <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu"
+                    aria-expanded="false">☰</button>
             </div>
 
             <ul class="nav-links" id="navLinks">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#career">Career</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#cv">CV</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" data-i18n="nav.home">Home</a></li>
+                <li><a href="#about" data-i18n="nav.about">About</a></li>
+                <li><a href="#career" data-i18n="nav.career">Career</a></li>
+                <li><a href="#certifications" data-i18n="nav.certifications">Certifications</a></li>
+                <li><a href="#education" data-i18n="nav.education">Education</a></li>
+                <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+                <li><a href="#cv" data-i18n="nav.cv">CV</a></li>
+                <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
             </ul>
 
         </nav>
@@ -189,27 +223,21 @@
     <main>
 
         <!-- ================= HERO ================= -->
-
         <section class="hero" id="home">
-
             <div class="container hero-content">
 
                 <div class="hero-text">
-
-                    <p class="eyebrow reveal">
+                    <p class="eyebrow reveal" data-i18n="hero.eyebrow">
                         OPERATIONS • PROCESS SAFETY • INDUSTRIAL OPERATIONS
                     </p>
 
-                    <h1 class="reveal">
-                        Ahmed Saied<br>
-                        <span>Hawash</span>
+                    <h1 class="reveal" data-hero-name>
+                        Ahmed Saied<br><span>Hawash</span>
                     </h1>
 
-                    <h2 class="reveal">
-                        Operations Technician at Ezz Steel
-                    </h2>
+                    <h2 class="reveal" data-i18n="hero.title">Operations Technician at Ezz Steel</h2>
 
-                    <p class="hero-description reveal">
+                    <p class="hero-description reveal" data-i18n="hero.description">
                         Industrial operations professional with experience
                         across Oil & Gas and heavy industry, with a focus on
                         field operations, control room operations, process
@@ -217,670 +245,209 @@
                     </p>
 
                     <div class="hero-buttons reveal">
-                        <a href="#career" class="btn btn-primary">
-                            Explore My Career
-                        </a>
-
-                        <a href="cv/Ahmed-Saied-Hawash-CV.pdf" class="btn btn-secondary" target="_blank" rel="noopener">
-                            View CV
-                        </a>
+                        <a href="#career" class="btn btn-primary" data-i18n="hero.btn_primary">Explore My Career</a>
+                        <a href="cv/Ahmed-Saied-Hawash-CV.pdf" class="btn btn-secondary" target="_blank" rel="noopener"
+                            data-i18n="hero.btn_secondary">View CV</a>
                     </div>
 
                     <div class="hero-links reveal">
                         <a href="https://www.linkedin.com/in/ahmedsaiedhawash/" target="_blank"
-                            rel="noopener noreferrer">
-                            LinkedIn
-                        </a>
-
+                            rel="noopener noreferrer" data-i18n="hero.links.linkedin">LinkedIn</a>
                         <span>•</span>
-
-                        <a href="https://github.com/ahmedsaiedhawash" target="_blank" rel="noopener noreferrer">
-                            GitHub
-                        </a>
-
+                        <a href="https://github.com/ahmedsaiedhawash" target="_blank" rel="noopener noreferrer"
+                            data-i18n="hero.links.github">GitHub</a>
                         <span>•</span>
-
-                        <a href="https://twitter.com/ahmedsaiedhawash" target="_blank" rel="noopener noreferrer">
-                            Twitter / X
-                        </a>
+                        <a href="https://twitter.com/ahmedsaiedhawash" target="_blank" rel="noopener noreferrer"
+                            data-i18n="hero.links.twitter">Twitter / X</a>
                     </div>
-
                 </div>
 
-
                 <div class="hero-card reveal">
-
                     <div class="profile-image-wrap">
                         <img src="images/ahmed-saied-hawash_profile.jpg" alt="Ahmed Saied Hawash" class="profile-image"
                             loading="eager" fetchpriority="high">
                     </div>
-
                     <div class="hero-card-info">
-
-                        <h3>Operations Technician</h3>
-
-                        <p>Ezz Steel / EZDK</p>
-
+                        <h3 data-i18n="hero.card.job_title">Operations Technician</h3>
+                        <p data-i18n="hero.card.company">Ezz Steel / EZDK</p>
                         <div class="status">
                             <span></span>
-                            Currently working
+                            <span data-i18n="hero.card.status">Currently working</span>
                         </div>
-
                     </div>
-
                 </div>
 
             </div>
-
         </section>
 
 
         <!-- ================= ABOUT ================= -->
-
         <section class="section" id="about">
-
             <div class="container">
 
                 <div class="section-heading reveal">
-                    <p class="section-label">ABOUT ME</p>
-                    <h2>Professional Profile</h2>
+                    <p class="section-label" data-i18n="about.label">ABOUT ME</p>
+                    <h2 data-i18n="about.title">Professional Profile</h2>
                 </div>
 
                 <div class="about-grid">
 
                     <div class="about-text reveal">
-
-                        <p class="large-text">
+                        <p class="large-text" data-i18n="about.large_text">
                             I am an Operations Technician with more than
                             three years of experience in industrial production
                             operations across Oil & Gas and heavy industry.
                         </p>
-
-                        <p>
-                            My experience combines field operations and
-                            control room activities, with practical exposure
-                            to process monitoring, troubleshooting, startup
-                            and shutdown activities, process safety systems
-                            and operating procedures.
-                        </p>
-
-                        <p>
-                            I am currently working at Ezz Steel / EZDK,
-                            developing my experience in steel plant operations
-                            with a particular interest in DRI and
-                            MIDREX-based direct reduction processes.
-                        </p>
-
+                        <div data-about-paragraphs></div>
                     </div>
 
                     <div class="about-side reveal">
-
-                        <img src="images/Ahmed-Saied-Hawash_about.jpg" alt="Ahmed Saied Hawash at work" class="about-photo" loading="lazy">
-
-                        <div class="info-card">
-
-                            <div class="info-item">
-                                <span>Current Role</span>
-                                <strong>Operations Technician</strong>
-                            </div>
-
-                            <div class="info-item">
-                                <span>Company</span>
-                                <strong>Ezz Steel / EZDK</strong>
-                            </div>
-
-                            <div class="info-item">
-                                <span>Industry</span>
-                                <strong>Steel / Oil & Gas</strong>
-                            </div>
-
-                            <div class="info-item">
-                                <span>Location</span>
-                                <strong>Alexandria, Egypt</strong>
-                            </div>
-
-                        </div>
-
+                        <img src="images/Ahmed-Saied-Hawash_about.jpg" alt="Ahmed Saied Hawash at work"
+                            class="about-photo" loading="lazy">
+                        <div class="info-card" data-about-info></div>
                     </div>
 
                 </div>
 
             </div>
-
         </section>
 
 
-        <!-- ================= CAREER (UPDATED) ================= -->
-
+        <!-- ================= CAREER ================= -->
         <section class="section section-dark" id="career">
-
             <div class="container">
 
                 <div class="section-heading reveal">
-                    <p class="section-label">CAREER</p>
-                    <h2>Professional Experience</h2>
+                    <p class="section-label" data-i18n="career.label">CAREER</p>
+                    <h2 data-i18n="career.title">Professional Experience</h2>
                 </div>
 
-                <div class="timeline">
-
-                    <!-- Experience 1 -->
-                    <article class="timeline-item reveal experience-bg" style="--bg-img: url('images/ezz-bg.jpg');">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <div class="timeline-header">
-                                <div>
-                                    <div class="timeline-date">Jul 2026 – Present</div>
-                                    <h3>Operations Technician Trainee</h3>
-                                    <h4>Al Ezz Dekheila Steel Co. (EZDK) — Ezz Steel</h4>
-                                </div>
-                                <img src="images/ezz-logo.png" alt="Ezz Steel Logo" class="company-logo">
-                            </div>
-                            <p>
-                                Industrial operations role within the steel
-                                manufacturing environment, developing
-                                practical knowledge of plant operations,
-                                process systems, equipment and safe operating
-                                practices.
-                            </p>
-                            <div class="tags">
-                                <span>Steel Operations</span>
-                                <span>DRI</span>
-                                <span>MIDREX</span>
-                                <span>Process Operations</span>
-                            </div>
-                        </div>
-                    </article>
-
-
-                    <!-- Experience 2 -->
-                    <article class="timeline-item reveal experience-bg" style="--bg-img: url('images/Ahmed-Saied-Hawash_abuqir-bg.jpg');">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <div class="timeline-header">
-                                <div>
-                                    <div class="timeline-date">Sep 2024 – Jul 2026</div>
-                                    <h3>Offshore Production Operator</h3>
-                                    <h4>Abu Qir Petroleum Company</h4>
-                                </div>
-                                <img src="images/abuqir-logo.png" alt="Abu Qir Petroleum Logo" class="company-logo">
-                            </div>
-                            <p>
-                                Worked in offshore production operations
-                                covering field and control room activities,
-                                process monitoring, equipment operation,
-                                troubleshooting and safe production.
-                            </p>
-                            <ul class="experience-list">
-                                <li>DeltaV Emerson DCS and ICSS exposure.</li>
-                                <li>SCADA and Fire & Gas systems.</li>
-                                <li>ESD, PSD and LSD systems.</li>
-                                <li>Cause & Effect Matrix, P&ID and PFD interpretation.</li>
-                                <li>Permit to Work and LOTO practices.</li>
-                                <li>PSSR production representative participation.</li>
-                                <li>H₂S and process safety practices.</li>
-                            </ul>
-                            <div class="tags">
-                                <span>Oil & Gas</span>
-                                <span>DCS</span>
-                                <span>ICSS</span>
-                                <span>SCADA</span>
-                                <span>Process Safety</span>
-                            </div>
-                        </div>
-                    </article>
-
-
-                    <!-- Experience 3 -->
-                    <article class="timeline-item reveal experience-bg"
-                        style="--bg-img: url('images/Ahmed-Saied-Hawash_iicp-bg.jpg');">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <div class="timeline-header">
-                                <div>
-                                    <div class="timeline-date">Mar 2023 – Sep 2024</div>
-                                    <h3>Production Technician</h3>
-                                    <h4>International Industrial Chemical Park</h4>
-                                </div>
-                                <img src="images/iicp-logo.png" alt="Chemical Park Logo" class="company-logo">
-                            </div>
-                            <p>
-                                Production operations in a chemical
-                                manufacturing environment involving batch
-                                reactors, chemical dosing, absorption and
-                                process monitoring.
-                            </p>
-                            <div class="tags">
-                                <span>Chemical Operations</span>
-                                <span>Batch Process</span>
-                                <span>Process Monitoring</span>
-                                <span>Safety</span>
-                            </div>
-                        </div>
-                    </article>
-
-                </div>
+                <div class="timeline" data-career-items></div>
 
             </div>
-
         </section>
 
 
         <!-- ================= CERTIFICATIONS ================= -->
-
         <section class="section" id="certifications">
-
             <div class="container">
 
                 <div class="section-heading reveal">
-                    <p class="section-label">CERTIFICATIONS</p>
-                    <h2>Professional Certifications</h2>
-                    <p class="section-subtext">
+                    <p class="section-label" data-i18n="certifications.label">CERTIFICATIONS</p>
+                    <h2 data-i18n="certifications.title">Professional Certifications</h2>
+                    <p class="section-subtext" data-i18n="certifications.subtext">
                         Click any certificate preview to enlarge it.
                     </p>
                 </div>
 
-                <div class="cards-grid" id="certGrid">
-
-                    <article class="cert-card reveal">
-                        <div class="cert-head">
-                            <div class="cert-icon">
-                                <img src="images/opito-logo.png" alt="OPITO Approved Logo" loading="lazy">
-                            </div>
-                            <div>
-                                <h3>BOSIET + HUET</h3>
-                                <p>OPITO Approved</p>
-                                <small>Issued Oct 2025 • Expires Oct 2029</small>
-                            </div>
-                        </div>
-                        <div class="cert-preview" role="button" tabindex="0"
-                            aria-label="View BOSIET certificate preview">
-                            <img src="images/cert-bosiet.jpg" alt="BOSIET + HUET Certificate Preview" loading="lazy">
-                            <span class="cert-zoom">🔍</span>
-                        </div>
-                        <a href="certificates/BOSIET-HUET.pdf" target="_blank" rel="noopener" class="card-link">
-                            View Certificate (PDF) →
-                        </a>
-                    </article>
-
-
-                    <article class="cert-card reveal">
-                        <div class="cert-head">
-                            <div class="cert-icon">
-                                <img src="images/nasp-logo.png" alt="NASP Approved Logo" loading="lazy">
-                            </div>
-                            <div>
-                                <h3>OSHA 30-Hour</h3>
-                                <p>General Industry</p>
-                                <small>NASP Approved • Apr 2025</small>
-                            </div>
-                        </div>
-                        <div class="cert-preview" role="button" tabindex="0" aria-label="View OSHA certificate preview">
-                            <img src="images/cert-osha.jpg" alt="OSHA 30-Hour Certificate Preview" loading="lazy">
-                            <span class="cert-zoom">🔍</span>
-                        </div>
-                        <a href="certificates/OSHA-30.pdf" target="_blank" rel="noopener" class="card-link">
-                            View Certificate (PDF) →
-                        </a>
-                    </article>
-
-
-                    <article class="cert-card reveal">
-                        <div class="cert-head">
-                            <div class="cert-icon">
-                                <img src="images/abuqir-logo.png" alt="Abu Qir Petroleum Logo" loading="lazy">
-                            </div>
-                            <div>
-                                <h3>Life Saving Rules</h3>
-                                <p>Abu Qir Petroleum</p>
-                                <small>Sep 2025</small>
-                            </div>
-                        </div>
-                        <div class="cert-preview" role="button" tabindex="0"
-                            aria-label="View Life Saving Rules certificate preview">
-                            <img src="images/cert-life-saving.jpg" alt="Life Saving Rules Certificate Preview"
-                                loading="lazy">
-                            <span class="cert-zoom">🔍</span>
-                        </div>
-                        <a href="certificates/Life-Saving-Rules.pdf" target="_blank" rel="noopener" class="card-link">
-                            View Certificate (PDF) →
-                        </a>
-                    </article>
-
-
-                    <article class="cert-card reveal">
-                        <div class="cert-head">
-                            <div class="cert-icon">
-                                <img src="images/petroleum-logo.png" alt="Petroleum Industry Training Logo"
-                                    loading="lazy">
-                            </div>
-                            <div>
-                                <h3>Petroleum Industry Fundamentals</h3>
-                                <p>44-Hour Program</p>
-                                <small>Petroleum Industry Training</small>
-                            </div>
-                        </div>
-                        <div class="cert-preview" role="button" tabindex="0"
-                            aria-label="View Petroleum Industry certificate preview">
-                            <img src="images/cert-petroleum.jpg"
-                                alt="Petroleum Industry Fundamentals Certificate Preview" loading="lazy">
-                            <span class="cert-zoom">🔍</span>
-                        </div>
-                        <a href="certificates/Petroleum-Industry-Fundamentals.pdf" target="_blank" rel="noopener"
-                            class="card-link">
-                            View Certificate (PDF) →
-                        </a>
-                    </article>
-
-
-                    <article class="cert-card reveal">
-                        <div class="cert-head">
-                            <div class="cert-icon">
-                                <img src="images/gammaltech-logo.png" alt="Gammal Tech Logo" loading="lazy">
-                            </div>
-                            <div>
-                                <h3>Cybersecurity 101</h3>
-                                <p>Gammal Tech</p>
-                                <small>Feb 2026</small>
-                            </div>
-                        </div>
-                        <div class="cert-preview" role="button" tabindex="0"
-                            aria-label="View Cybersecurity certificate preview">
-                            <img src="images/cert-cybersecurity.jpg" alt="Cybersecurity 101 Certificate Preview"
-                                loading="lazy">
-                            <span class="cert-zoom">🔍</span>
-                        </div>
-                        <a href="certificates/Cybersecurity-101.pdf" target="_blank" rel="noopener" class="card-link">
-                            View Certificate (PDF) →
-                        </a>
-                    </article>
-
-                </div>
+                <div class="cards-grid" id="certGrid" data-cert-items></div>
 
             </div>
-
         </section>
 
 
         <!-- ================= EDUCATION ================= -->
-
         <section class="section section-light" id="education">
-
             <div class="container">
 
                 <div class="section-heading reveal">
-                    <p class="section-label">EDUCATION</p>
-                    <h2>Education & Training</h2>
+                    <p class="section-label" data-i18n="education.label">EDUCATION</p>
+                    <h2 data-i18n="education.title">Education & Training</h2>
                 </div>
 
-                <div class="education-card reveal">
-
-                    <div class="education-year">2020</div>
-
-                    <div>
-                        <h3>Advanced Technical Diploma</h3>
-                        <h4>Petrochemical Technology</h4>
-                        <p>El-Wardian Advanced Technical Industrial School</p>
-
-                        <div class="education-stats">
-                            <span>Excellent</span>
-                            <span>88.1% Aggregate</span>
-                            <span>8th among Petrochemical Students</span>
-                        </div>
-                    </div>
-
-                </div>
+                <div class="education-card reveal" data-education></div>
 
             </div>
-
         </section>
 
 
         <!-- ================= SKILLS ================= -->
-
         <section class="section" id="skills">
-
             <div class="container">
 
                 <div class="section-heading reveal">
-                    <p class="section-label">SKILLS</p>
-                    <h2>Technical Skills</h2>
+                    <p class="section-label" data-i18n="skills.label">SKILLS</p>
+                    <h2 data-i18n="skills.title">Technical Skills</h2>
                 </div>
 
-                <div class="skills-grid">
-
-                    <div class="skill-group reveal">
-                        <h3>Operations</h3>
-                        <div class="skill-list">
-                            <span>Field Operations</span>
-                            <span>Control Room Operations</span>
-                            <span>Process Monitoring</span>
-                            <span>Troubleshooting</span>
-                            <span>Startup & Shutdown</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-group reveal">
-                        <h3>Control Systems</h3>
-                        <div class="skill-list">
-                            <span>Emerson DeltaV</span>
-                            <span>ICSS</span>
-                            <span>SCADA</span>
-                            <span>Fire & Gas</span>
-                            <span>ESD / PSD / LSD</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-group reveal">
-                        <h3>Process Safety</h3>
-                        <div class="skill-list">
-                            <span>PTW</span>
-                            <span>LOTO</span>
-                            <span>PSSR</span>
-                            <span>H₂S</span>
-                            <span>Cause & Effect</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-group reveal">
-                        <h3>Engineering Documents</h3>
-                        <div class="skill-list">
-                            <span>PFD</span>
-                            <span>P&ID</span>
-                            <span>Operating Procedures</span>
-                            <span>Process Documentation</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-group reveal">
-                        <h3>Digital Skills</h3>
-                        <div class="skill-list">
-                            <span>Python</span>
-                            <span>C / C++</span>
-                            <span>C#</span>
-                            <span>Excel VBA</span>
-                            <span>Google Apps Script</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-group reveal">
-                        <h3>Current Technical Focus</h3>
-                        <div class="skill-list">
-                            <span>DRI</span>
-                            <span>MIDREX</span>
-                            <span>Reduction Gas</span>
-                            <span>Reforming</span>
-                            <span>Gas Recycling</span>
-                        </div>
-                    </div>
-
-                </div>
+                <div class="skills-grid" data-skills-grid></div>
 
             </div>
-
         </section>
 
 
         <!-- ================= CV ================= -->
-
         <section class="section section-dark" id="cv">
-
             <div class="container cv-section reveal">
-
                 <div>
-                    <p class="section-label">CURRICULUM VITAE</p>
-                    <h2>View My CV</h2>
-                    <p>
+                    <p class="section-label" data-i18n="cv.label">CURRICULUM VITAE</p>
+                    <h2 data-i18n="cv.title">View My CV</h2>
+                    <p data-i18n="cv.description">
                         Download or view my current professional CV
                         containing my complete experience, education,
                         certifications and technical skills.
                     </p>
                 </div>
-
-                <a href="cv/Ahmed-Saied-Hawash-CV.pdf" target="_blank" rel="noopener" class="btn btn-primary">
-                    View CV →
-                </a>
-
+                <a href="cv/Ahmed-Saied-Hawash-CV.pdf" target="_blank" rel="noopener" class="btn btn-primary"
+                    data-i18n="cv.button">View CV</a>
             </div>
-
         </section>
 
 
         <!-- ================= CONTACT ================= -->
-
         <section class="section" id="contact">
-
             <div class="container">
 
                 <div class="section-heading reveal">
-                    <p class="section-label">CONTACT</p>
-                    <h2>Get In Touch</h2>
-                    <p class="section-subtext">
+                    <p class="section-label" data-i18n="contact.label">CONTACT</p>
+                    <h2 data-i18n="contact.title">Get In Touch</h2>
+                    <p class="section-subtext" data-i18n="contact.subtext">
                         Feel free to reach out through any of these channels.
                     </p>
                 </div>
 
+                <!-- Contact Cards -->
+                <div class="contact-grid" data-contact-items></div>
 
-                <div class="contact-grid">
+                <!-- Contact Form (Web3Forms) -->
+                <form id="contactForm" class="contact-form reveal" novalidate>
+                    <input type="hidden" name="access_key" value="038b318e-3834-4447-926f-24cb6c7adf30">
+                    <input type="hidden" name="subject" value="New message from your portfolio website">
+                    <input type="hidden" name="from_name" value="Ahmed Saied Hawash Portfolio">
+                    <input type="checkbox" name="botcheck" class="hidden" style="display:none">
 
-                    <!-- Facebook -->
-                    <a href="https://www.facebook.com/AhmedSaiedHawash/" target="_blank" rel="noopener noreferrer"
-                        class="contact-card contact-facebook reveal" aria-label="Facebook profile">
-                        <span class="contact-icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
-                                <path
-                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
-                            </svg>
-                        </span>
-                        <div>
-                            <h3>Facebook</h3>
-                            <p>Ahmed Saied Hawash</p>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="formName" data-i18n="form.name_label">Name</label>
+                            <input type="text" id="formName" name="name" required placeholder="Your full name">
                         </div>
-                    </a>
-
-
-                    <!-- LinkedIn -->
-                    <a href="https://www.linkedin.com/in/ahmedsaiedhawash/" target="_blank" rel="noopener noreferrer"
-                        class="contact-card contact-linkedin reveal" aria-label="LinkedIn profile">
-                        <span class="contact-icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
-                                <path
-                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                            </svg>
-                        </span>
-                        <div>
-                            <h3>LinkedIn</h3>
-                            <p>Professional profile</p>
+                        <div class="form-group">
+                            <label for="formEmail" data-i18n="form.email_label">Email</label>
+                            <input type="email" id="formEmail" name="email" required placeholder="your@email.com">
                         </div>
-                    </a>
+                    </div>
 
+                    <div class="form-group">
+                        <label for="formSubject" data-i18n="form.subject_label">Subject</label>
+                        <input type="text" id="formSubject" name="user_subject" required
+                            placeholder="Job opportunity / Question / Collaboration">
+                    </div>
 
-                    <!-- GitHub -->
-                    <a href="https://github.com/ahmedsaiedhawash" target="_blank" rel="noopener noreferrer"
-                        class="contact-card contact-github reveal" aria-label="GitHub profile">
-                        <span class="contact-icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
-                                <path
-                                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
-                            </svg>
-                        </span>
-                        <div>
-                            <h3>GitHub</h3>
-                            <p>Code & projects</p>
-                        </div>
-                    </a>
+                    <div class="form-group">
+                        <label for="formMessage" data-i18n="form.message_label">Message</label>
+                        <textarea id="formMessage" name="message" rows="5" required
+                            placeholder="Write your message here..."></textarea>
+                    </div>
 
+                    <button type="submit" class="btn btn-primary" data-i18n="form.submit">Send Message</button>
 
-                    <!-- Instagram -->
-                    <a href="https://www.instagram.com/ahmedsaiedhawash/" target="_blank" rel="noopener noreferrer"
-                        class="contact-card contact-instagram reveal" aria-label="Instagram profile">
-                        <span class="contact-icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
-                                <path
-                                    d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm7.846-10.405a1.441 1.441 0 01-2.88 0 1.44 1.44 0 012.88 0z" />
-                            </svg>
-                        </span>
-                        <div>
-                            <h3>Instagram</h3>
-                            <p>@ahmedsaiedhawash</p>
-                        </div>
-                    </a>
+                    <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+                </form>
 
-
-                    <!-- Twitter / X -->
-                    <a href="https://twitter.com/ahmedsaiedhawash" target="_blank" rel="noopener noreferrer"
-                        class="contact-card contact-twitter reveal" aria-label="Twitter profile">
-                        <span class="contact-icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
-                                <path
-                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                            </svg>
-                        </span>
-                        <div>
-                            <h3>Twitter / X</h3>
-                            <p>@ahmedsaiedhawash</p>
-                        </div>
-                    </a>
-
-
-                    <!-- Email -->
-                    <a href="mailto:ahmedsaiedhawash@gmail.com" class="contact-card contact-email reveal"
-                        aria-label="Send email">
-                        <span class="contact-icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
-                                <path
-                                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
-                            </svg>
-                        </span>
-                        <div>
-                            <h3>Email</h3>
-                            <p>ahmedsaiedhawash@gmail.com</p>
-                        </div>
-                    </a>
-
-
-                    <!-- Phone -->
-                    <a href="tel:+201091570288" class="contact-card contact-phone reveal"
-                        aria-label="Call phone number">
-                        <span class="contact-icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
-                                <path
-                                    d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
-                            </svg>
-                        </span>
-                        <div>
-                            <h3>Phone</h3>
-                            <p>+20 10 9157 0288</p>
-                        </div>
-                    </a>
-
-                </div>
-
-
-                <!-- WHATSAPP BANNER -->
-
+                <!-- WhatsApp Banner -->
                 <a href="https://wa.me/201091570288?text=Hello%20Ahmed%2C%20I%20found%20your%20website%20and%20would%20like%20to%20connect."
                     target="_blank" rel="noopener noreferrer" class="whatsapp-banner reveal"
-                    aria-label="Chat on WhatsApp">
+                    aria-label="Chat on WhatsApp" data-whatsapp-link>
 
                     <span class="whatsapp-banner-icon" aria-hidden="true">
                         <svg viewBox="0 0 24 24" fill="currentColor" width="34" height="34">
@@ -890,55 +457,45 @@
                     </span>
 
                     <div class="whatsapp-banner-content">
-                        <h3>Chat on WhatsApp</h3>
-                        <p>Fastest way to reach me — usually reply within minutes.</p>
+                        <h3 data-whatsapp-title>Chat on WhatsApp</h3>
+                        <p data-whatsapp-desc>Fastest way to reach me — usually reply within minutes.</p>
                     </div>
 
-                    <span class="whatsapp-banner-cta">Open Chat →</span>
+                    <span class="whatsapp-banner-cta" data-whatsapp-btn>Open Chat →</span>
 
                 </a>
 
             </div>
-
         </section>
 
     </main>
 
 
     <!-- ================= FOOTER ================= -->
-
     <footer class="footer">
         <div class="container footer-content">
-            <p>© <span id="currentYear"></span> Ahmed Saied Hawash</p>
-            <p>Operations Technician • Ezz Steel</p>
+            <p>© <span id="currentYear"></span> <span data-footer-copyright>Ahmed Saied Hawash</span></p>
+            <p data-footer-tagline>Operations Technician • Ezz Steel</p>
         </div>
     </footer>
 
 
     <!-- ================= FLOATING WHATSAPP ================= -->
-
     <a href="https://wa.me/201091570288?text=Hello%20Ahmed%2C%20I%20found%20your%20website%20and%20would%20like%20to%20connect."
         target="_blank" rel="noopener noreferrer" class="floating-whatsapp" aria-label="Chat on WhatsApp">
-
         <svg viewBox="0 0 24 24" fill="currentColor" width="26" height="26">
             <path
                 d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
         </svg>
-
-        <span class="floating-whatsapp-tooltip">Chat with me</span>
-
+        <span class="floating-whatsapp-tooltip" data-whatsapp-tooltip>Chat with me</span>
     </a>
 
 
     <!-- ================= BACK TO TOP ================= -->
-
-    <button class="back-to-top" id="backToTop" aria-label="Back to top">
-        ↑
-    </button>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
 
 
     <!-- ================= CERTIFICATE LIGHTBOX ================= -->
-
     <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Certificate preview">
         <button class="lightbox-close" id="lightboxClose" aria-label="Close preview">✕</button>
         <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous certificate">‹</button>
@@ -948,7 +505,9 @@
     </div>
 
 
+    <!-- ================= SCRIPTS (Order matters!) ================= -->
     <script src="script.js"></script>
+    <script src="renderer.js"></script>
 
 </body>
 
