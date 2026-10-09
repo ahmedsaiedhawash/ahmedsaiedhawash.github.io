@@ -228,7 +228,7 @@
     }
 
     // =========================
-    // Certifications
+    // Certifications (بدون زر "View Certificate")
     // =========================
     function populateCertifications(dict) {
         const c = dict.certifications;
@@ -236,8 +236,6 @@
 
         const container = document.querySelector('[data-cert-items]');
         if (!container || !Array.isArray(c.items)) return;
-
-        const viewLabel = LANG === 'ar' ? 'عرض الشهادة (PDF) ←' : 'View Certificate (PDF) →';
 
         container.innerHTML = c.items.map(item => `
             <article class="cert-card reveal">
@@ -255,7 +253,6 @@
                     <img src="images/${escapeHtml(item.image)}" alt="${escapeHtml(item.image_alt)}" loading="lazy">
                     <span class="cert-zoom">🔍</span>
                 </div>
-                <a href="${escapeHtml(item.pdf)}" target="_blank" rel="noopener" class="card-link">${viewLabel}</a>
             </article>
         `).join('');
     }

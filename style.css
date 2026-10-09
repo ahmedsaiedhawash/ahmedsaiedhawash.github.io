@@ -1006,20 +1006,6 @@ select {
     transform: scale(1);
 }
 
-.card-link {
-    display: inline-block;
-    color: var(--primary);
-    font-size: 0.8rem;
-    font-weight: 700;
-    margin-top: auto;
-    transition: color var(--transition), transform var(--transition);
-}
-
-.card-link:hover {
-    color: var(--primary-dark);
-    transform: translateX(4px);
-}
-
 
 /* =========================
    LIGHTBOX
@@ -2041,9 +2027,6 @@ html[dir="rtl"] .timeline-dot {
     right: 0;
 }
 
-html[dir="rtl"] .card-link:hover {
-    transform: translateX(-4px);
-}
 
 html[dir="rtl"] .contact-card::before {
     left: auto;

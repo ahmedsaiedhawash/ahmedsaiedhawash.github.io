@@ -7,7 +7,7 @@
     <!-- ================= ENGLISH VERSION (Homepage) ================= -->
     <url>
         <loc>https://ahmedsaiedhawash.github.io/</loc>
-        <lastmod>2026-10-08</lastmod>
+        <lastmod>2026-10-10</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
 
@@ -41,7 +41,7 @@
     <!-- ================= ARABIC VERSION (Homepage) ================= -->
     <url>
         <loc>https://ahmedsaiedhawash.github.io/ar.html</loc>
-        <lastmod>2026-10-08</lastmod>
+        <lastmod>2026-10-10</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
 
@@ -53,8 +53,8 @@
         <!-- Primary Image -->
         <image:image>
             <image:loc>https://ahmedsaiedhawash.github.io/images/ahmed-saied-hawash_profile.jpg</image:loc>
-            <image:title>أحمد سعيد حواش — فني عمليات</image:title>
-            <image:caption>أحمد سعيد حواش، فني عمليات في حديد عز</image:caption>
+            <image:title>أحمد سعيد حواش — فني تشغيل</image:title>
+            <image:caption>أحمد سعيد حواش، فني تشغيل في Ezz Steel</image:caption>
         </image:image>
 
         <!-- About Image -->
@@ -68,7 +68,7 @@
         <image:image>
             <image:loc>https://ahmedsaiedhawash.github.io/images/Ahmed-Saied-Hawash_og.png</image:loc>
             <image:title>أحمد سعيد حواش — بانر الموقع</image:title>
-            <image:caption>بانر الملف المهني — فني عمليات</image:caption>
+            <image:caption>بانر الملف المهني — فني تشغيل</image:caption>
         </image:image>
     </url>
 

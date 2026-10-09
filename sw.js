@@ -10,7 +10,7 @@
 // ⚠️ عند تحديث الموقع، قم بتغيير CACHE_VERSION
 // لكي يرى المتصفح الملفات الجديدة.
 
-const CACHE_VERSION = 'v1.0.1';
+const CACHE_VERSION = 'v1.0.2';
 const STATIC_CACHE = `static-${CACHE_VERSION}`;
 const IMAGE_CACHE = `images-${CACHE_VERSION}`;
 const RUNTIME_CACHE = `runtime-${CACHE_VERSION}`;

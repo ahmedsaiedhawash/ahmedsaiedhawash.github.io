@@ -1,17 +1,25 @@
 {
     "name": "Ahmed Saied Hawash — Operations Technician",
     "short_name": "Ahmed Hawash",
-    "description": "Operations Technician at Ezz Steel — Oil & Gas, DCS, Process Safety, DRI/MIDREX.",
+    "description": "Operations Technician at Ezz Steel — Oil & Gas, Petrochemical, DCS/ICSS, Process Safety.",
     "start_url": "/",
     "scope": "/",
     "display": "standalone",
-    "display_override": ["standalone", "minimal-ui", "browser"],
+    "display_override": [
+        "standalone",
+        "minimal-ui",
+        "browser"
+    ],
     "orientation": "portrait-primary",
     "background_color": "#ffffff",
     "theme_color": "#0b63ce",
     "lang": "en",
     "dir": "ltr",
-    "categories": ["business", "productivity", "education"],
+    "categories": [
+        "business",
+        "productivity",
+        "education"
+    ],
     "id": "/",
     "prefer_related_applications": false,
     "icons": [

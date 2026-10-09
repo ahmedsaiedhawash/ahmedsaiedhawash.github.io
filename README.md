@@ -4,7 +4,7 @@
 
 ![Portfolio Banner](images/Ahmed-Saied-Hawash_og.png)
 
-**Operations Technician | Oil & Gas | DCS | Process Safety | DRI & MIDREX**
+**Operations Technician | Oil & Gas | Petrochemical | DCS/ICSS | Process Safety**
 
 [![Live Site](https://img.shields.io/badge/Live-ahmedsaiedhawash.github.io-0b63ce?style=for-the-badge&logo=googlechrome&logoColor=white)](https://ahmedsaiedhawash.github.io/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Ahmed%20Saied%20Hawash-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ahmedsaiedhawash/)
@@ -16,7 +16,7 @@
 
 ## 🌍 Overview
 
-A modern, bilingual (English & Arabic), fully responsive personal portfolio website designed to showcase professional experience, certifications, and technical skills in industrial operations.
+A modern, bilingual (English & Arabic), fully responsive personal portfolio website designed to showcase professional experience, certifications, and technical skills in **industrial operations, offshore Oil & Gas production, and petrochemical processing**.
 
 Built with **vanilla HTML, CSS, and JavaScript** — no frameworks, no build tools, no dependencies. Deployed on **GitHub Pages**.
 
@@ -43,8 +43,15 @@ Built with **vanilla HTML, CSS, and JavaScript** — no frameworks, no build too
 - Complete **English (EN)** and **Arabic (AR)** versions
 - Full **RTL (Right-to-Left)** support for Arabic
 - **Cairo** font for Arabic, **Inter** for English
+- **Technical/professional terms kept in English** within the Arabic version (e.g., DCS, ICSS, PSM) for industry accuracy
 - Language preference saved in `localStorage`
 - **`hreflang` tags** for correct search engine indexing
+
+### 📊 Data-Driven Architecture
+- **Two separate JSON files** — one per language (`data-en.json`, `data-ar.json`)
+- **`renderer.js`** dynamically loads the correct file based on `<html lang>`
+- **Zero HTML edits** required for content updates
+- **Fallback content** in HTML ensures the site remains functional even if JSON fails to load
 
 ### 🔍 SEO & Performance
 - **Open Graph** + **Twitter Cards** for rich social media previews
@@ -84,7 +91,7 @@ Built with **vanilla HTML, CSS, and JavaScript** — no frameworks, no build too
 | **Markup** | HTML5 (semantic) |
 | **Styling** | CSS3 (Custom Properties, Grid, Flexbox, Animations) |
 | **Scripting** | Vanilla JavaScript (ES6+) |
-| **Data** | JSON (single-file i18n) |
+| **Data** | JSON (split-file i18n) |
 | **Fonts** | Google Fonts (Inter + Cairo) |
 | **Analytics** | Google Analytics 4 |
 | **Forms** | Web3Forms API |
@@ -109,7 +116,8 @@ ahmedsaiedhawash.github.io/
 ├── renderer.js                   # Dynamic content loader
 ├── sw.js                         # Service Worker (PWA)
 │
-├── data.json                     # ← EDIT CONTENT HERE (bilingual)
+├── data-en.json                  # ← English content (EDIT HERE)
+├── data-ar.json                  # ← Arabic content (EDIT HERE)
 │
 ├── manifest.json                 # PWA manifest
 ├── robots.txt                    # SEO crawler rules
@@ -153,13 +161,18 @@ ahmedsaiedhawash.github.io/
 
 ## ✏️ How to Update Content
 
-**The entire site is data-driven.** All text (both English and Arabic) lives in **`data.json`**.
+**The entire site is data-driven.** All text is split across **two language-specific JSON files**:
+
+| File | Language | When to Edit |
+|:---|:---:|:---|
+| `data-en.json` | 🇬🇧 English | For changes to the English version |
+| `data-ar.json` | 🇪🇬 Arabic | For changes to the Arabic version |
 
 ### 📝 To update your information:
 
-1. Open **`data.json`** in any text editor.
-2. Find the relevant section:
-   - `hero` → Your name, title, description
+1. Open the relevant file in any text editor.
+2. Find the section you want to edit:
+   - `hero` → Name, title, description
    - `about` → Professional bio, info card
    - `career` → Work experience
    - `certifications` → Certificates
@@ -169,21 +182,28 @@ ahmedsaiedhawash.github.io/
 3. Edit the values (keep the structure and quotes intact).
 4. Save and commit to GitHub.
 
-> **⚠️ Important:** `data.json` is loaded dynamically at page load. No HTML edits needed for content updates.
+> **⚠️ Important:** Both files are loaded dynamically at page load based on `<html lang>`. No HTML edits needed.
 
 ### 🖼️ To add a new image:
 
 1. Place the image in the `images/` folder.
-2. Reference it in `data.json` (e.g., `"logo": "new-logo.png"`).
+2. Reference it in the correct JSON file (e.g., `"logo": "new-logo.png"`).
 3. The site will automatically display it.
 
 ### 🌍 To add a new language (e.g., French):
 
-1. Copy the entire `"en"` block in `data.json`.
-2. Rename it to `"fr"`.
-3. Translate all values.
-4. Create `fr.html` (copy of `index.html`, change `lang="fr"`).
-5. Add `<link rel="alternate" hreflang="fr" ...>` to all HTML files.
+1. Create `data-fr.json` (copy from `data-en.json` and translate).
+2. Create `fr.html` (copy of `index.html`, change `lang="fr"`).
+3. Update `renderer.js` → `DATA_FILES` map:
+   ```js
+   const DATA_FILES = {
+       en: 'data-en.json',
+       ar: 'data-ar.json',
+       fr: 'data-fr.json'
+   };
+   ```
+4. Add `<link rel="alternate" hreflang="fr" ...>` to all HTML files.
+5. Update `sitemap.xml` to include the new language.
 
 ---
 

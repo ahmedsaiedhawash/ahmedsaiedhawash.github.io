@@ -2,9 +2,9 @@
     "meta": {
         "lang": "en",
         "dir": "ltr",
-        "title": "Ahmed Saied Hawash | Operations Technician | Oil & Gas, DRI & MIDREX",
-        "description": "Ahmed Saied Hawash — Operations Technician at Ezz Steel, with experience in Oil & Gas Operations, Process Safety, DCS, ICSS and DRI/MIDREX operations.",
-        "keywords": "Ahmed Saied Hawash, Operations Technician, Ezz Steel, Oil and Gas, Process Safety, DCS, ICSS, DRI, MIDREX, Alexandria Egypt, فني عمليات",
+        "title": "Ahmed Saied Hawash | Operations Technician | Oil & Gas & Petrochemical",
+        "description": "Ahmed Saied Hawash — Operations Technician at Ezz Steel, with 3+ years of experience in offshore Oil & Gas production, petrochemical processing, DCS/ICSS operations and process safety management.",
+        "keywords": "Ahmed Saied Hawash, Operations Technician, Ezz Steel, Oil & Gas, Offshore Production, Petrochemical, Process Safety, DCS, ICSS, PSM, Alexandria Egypt",
         "theme_color": "#0b63ce"
     },
     "nav": {
@@ -21,11 +21,11 @@
         "switch_lang_label": "Switch to Arabic"
     },
     "hero": {
-        "eyebrow": "OPERATIONS • PROCESS SAFETY • INDUSTRIAL OPERATIONS",
+        "eyebrow": "OFFSHORE OIL & GAS • PETROCHEMICAL • PROCESS SAFETY",
         "name_line1": "Ahmed Saied",
         "name_line2": "Hawash",
         "title": "Operations Technician at Ezz Steel",
-        "description": "Industrial operations professional with experience across Oil & Gas and heavy industry, with a focus on field operations, control room operations, process monitoring and safe plant operation.",
+        "description": "Operations professional with 3+ years of experience across offshore Oil & Gas production, petrochemical processing, and industrial operations — specialized in DCS/ICSS operations, process monitoring, production optimization, and process safety management.",
         "btn_primary": "Explore My Career",
         "btn_secondary": "View CV",
         "links": {
@@ -42,15 +42,15 @@
     "about": {
         "label": "ABOUT ME",
         "title": "Professional Profile",
-        "large_text": "I am an Operations Technician with more than three years of experience in industrial production operations across Oil & Gas and heavy industry.",
+        "large_text": "I am an Operations professional with more than 3 years of experience across offshore Oil & Gas production, petrochemical processing, and industrial operations.",
         "paragraphs": [
-            "My experience combines field operations and control room activities, with practical exposure to process monitoring, troubleshooting, startup and shutdown activities, process safety systems and operating procedures.",
-            "I am currently working at Ezz Steel / EZDK, developing my experience in steel plant operations with a particular interest in DRI and MIDREX-based direct reduction processes."
+            "My background covers DCS/ICSS operations, process monitoring, production optimization, and process safety management across offshore platforms and chemical processing facilities. I have worked on offshore production systems, subsea wells, chlorinated paraffin production units, and associated utility systems.",
+            "Currently, I am expanding my industrial operations expertise through technical training in steel manufacturing at Ezz Steel / EZDK, while building on a strong foundation in process operations, safety systems, troubleshooting, and continuous improvement."
         ],
         "info": [
             {
                 "label": "Current Role",
-                "value": "Operations Technician"
+                "value": "Operations Technician Trainee"
             },
             {
                 "label": "Company",
@@ -58,7 +58,7 @@
             },
             {
                 "label": "Industry",
-                "value": "Steel / Oil & Gas"
+                "value": "Steel / Oil & Gas / Petrochemical"
             },
             {
                 "label": "Location",
@@ -77,53 +77,55 @@
                 "logo": "ezz-logo.png",
                 "logo_alt": "Ezz Steel Logo",
                 "bg": "ezz-bg.jpg",
-                "description": "Industrial operations role within the steel manufacturing environment, developing practical knowledge of plant operations, process systems, equipment and safe operating practices.",
+                "description": "Undergoing operational and technical training on steel manufacturing processes, plant operations, and industrial safety standards. Developing practical knowledge of production systems, operational procedures, and manufacturing best practices.",
                 "list": [],
                 "tags": [
                     "Steel Operations",
-                    "DRI",
-                    "MIDREX",
-                    "Process Operations"
+                    "Plant Operations",
+                    "Industrial Safety",
+                    "Process Training"
                 ]
             },
             {
-                "date": "Sep 2024 – Jul 2026",
+                "date": "Oct 2024 – Jun 2026",
                 "job_title": "Offshore Production Operator",
                 "company": "Abu Qir Petroleum Company",
                 "logo": "abuqir-logo.png",
                 "logo_alt": "Abu Qir Petroleum Logo",
                 "bg": "Ahmed-Saied-Hawash_abuqir-bg.jpg",
-                "description": "Worked in offshore production operations covering field and control room activities, process monitoring, equipment operation, troubleshooting and safe production.",
+                "description": "Operated and monitored offshore production systems (DCS/ICSS and field) across multi-platform facilities and subsea wells in the North Abu Qir Field, ensuring safe and efficient operations in compliance with SOPs and Process Safety Management (PSM).",
                 "list": [
-                    "DeltaV Emerson DCS and ICSS exposure.",
-                    "SCADA and Fire & Gas systems.",
-                    "ESD, PSD and LSD systems.",
-                    "Cause & Effect Matrix, P&ID and PFD interpretation.",
-                    "Permit to Work and LOTO practices.",
-                    "PSSR production representative participation.",
-                    "H₂S and process safety practices."
+                    "Managed production rates of up to 140 MMSCFD of gas and 3,500 BBL/D of oil.",
+                    "Designed and introduced an Excel VBA-based production reporting automation system integrated with a Telegram distribution bot, reducing manual workload by approximately 8 hours per week.",
+                    "Coordinated and supervised operations of two unmanned offshore platforms from the Master Platform, including field inspections and maintenance support.",
+                    "Monitored and supported WHCP, HPU, umbilical, chemical injection systems, and associated production facilities.",
+                    "Supported troubleshooting activities and collaborated with engineering and maintenance teams to improve equipment reliability and plant performance."
                 ],
                 "tags": [
                     "Oil & Gas",
                     "DCS",
                     "ICSS",
-                    "SCADA",
+                    "Subsea Systems",
                     "Process Safety"
                 ]
             },
             {
-                "date": "Mar 2023 – Sep 2024",
+                "date": "Mar 2023 – Aug 2024",
                 "job_title": "Production Technician",
-                "company": "International Industrial Chemical Park",
+                "company": "International Industrial Chemical Park (IICP)",
                 "logo": "iicp-logo.png",
                 "logo_alt": "Chemical Park Logo",
                 "bg": "Ahmed-Saied-Hawash_iicp-bg.jpg",
-                "description": "Production operations in a chemical manufacturing environment involving batch reactors, chemical dosing, absorption and process monitoring.",
-                "list": [],
+                "description": "Controlled chlorination reactions of Heavy Liquid Paraffin (HLP) in Chlorinated Paraffins (CPs 45%:52%) production, while optimizing chlorine concentration to achieve product specifications.",
+                "list": [
+                    "Operated absorption and off-gas treatment systems for the production of Hydrochloric Acid (HCl 32%) and Sodium Hypochlorite (NaOCl 18%) by-products.",
+                    "Operated and maintained process equipment including reactors, UV-assisted reactors, heat exchangers, pumps, blowers, and degassers.",
+                    "Ensured safe handling of chlorine, HCl, NaOCl, and other hazardous chemicals in compliance with operational and safety procedures."
+                ],
                 "tags": [
                     "Chemical Operations",
                     "Batch Process",
-                    "Process Monitoring",
+                    "Reactor Operations",
                     "Safety"
                 ]
             }
@@ -138,51 +140,46 @@
                 "logo": "opito-logo.png",
                 "logo_alt": "OPITO Approved Logo",
                 "title": "BOSIET + HUET",
-                "issuer": "OPITO Approved",
+                "issuer": "OPITO Approved — Arab Academy for Science, Technology & Maritime Transport",
                 "date": "Issued Oct 2025 • Expires Oct 2029",
                 "image": "cert-bosiet.jpg",
-                "image_alt": "BOSIET + HUET Certificate Preview",
-                "pdf": "certificates/BOSIET-HUET.pdf"
+                "image_alt": "BOSIET + HUET Certificate Preview"
             },
             {
                 "logo": "nasp-logo.png",
                 "logo_alt": "NASP Approved Logo",
-                "title": "OSHA 30-Hour",
-                "issuer": "General Industry",
-                "date": "NASP Approved • Apr 2025",
+                "title": "OSHA 30-Hour General Industry",
+                "issuer": "NASP Approved — Egyptian Syndicate of Scientific Professions",
+                "date": "Issued Apr 2025 • Code: 648951",
                 "image": "cert-osha.jpg",
-                "image_alt": "OSHA 30-Hour Certificate Preview",
-                "pdf": "certificates/OSHA-30.pdf"
+                "image_alt": "OSHA 30-Hour Certificate Preview"
             },
             {
                 "logo": "abuqir-logo.png",
                 "logo_alt": "Abu Qir Petroleum Logo",
                 "title": "Life Saving Rules",
-                "issuer": "Abu Qir Petroleum",
-                "date": "Sep 2025",
+                "issuer": "Abu Qir Petroleum Company",
+                "date": "Issued Sep 2025 • Code: 7317",
                 "image": "cert-life-saving.jpg",
-                "image_alt": "Life Saving Rules Certificate Preview",
-                "pdf": "certificates/Life-Saving-Rules.pdf"
+                "image_alt": "Life Saving Rules Certificate Preview"
             },
             {
                 "logo": "petroleum-logo.png",
                 "logo_alt": "Petroleum Industry Training Logo",
-                "title": "Petroleum Industry Fundamentals",
-                "issuer": "44-Hour Program",
-                "date": "Petroleum Industry Training",
+                "title": "Petroleum Industry Fundamentals (44 Hours)",
+                "issuer": "Egyptian Syndicate of Scientific Professions",
+                "date": "Issued Jul 2024 • Code: C15S346",
                 "image": "cert-petroleum.jpg",
-                "image_alt": "Petroleum Industry Fundamentals Certificate Preview",
-                "pdf": "certificates/Petroleum-Industry-Fundamentals.pdf"
+                "image_alt": "Petroleum Industry Fundamentals Certificate Preview"
             },
             {
                 "logo": "gammaltech-logo.png",
                 "logo_alt": "Gammal Tech Logo",
                 "title": "Cybersecurity 101",
-                "issuer": "Gammal Tech",
-                "date": "Feb 2026",
+                "issuer": "Gammal Tech Academy",
+                "date": "Issued Feb 2026 • Code: GT-2026-000080",
                 "image": "cert-cybersecurity.jpg",
-                "image_alt": "Cybersecurity 101 Certificate Preview",
-                "pdf": "certificates/Cybersecurity-101.pdf"
+                "image_alt": "Cybersecurity 101 Certificate Preview"
             }
         ]
     },
@@ -209,57 +206,56 @@
                     "Field Operations",
                     "Control Room Operations",
                     "Process Monitoring",
-                    "Troubleshooting",
-                    "Startup & Shutdown"
+                    "Production Optimization",
+                    "Troubleshooting & Root Cause Analysis"
                 ]
             },
             {
                 "title": "Control Systems",
                 "items": [
-                    "Emerson DeltaV",
+                    "Emerson DeltaV DCS",
                     "ICSS",
                     "SCADA",
-                    "Fire & Gas",
-                    "ESD / PSD / LSD"
+                    "Fire & Gas Systems",
+                    "Emergency Shutdown (ESD / PSD / LSD)"
                 ]
             },
             {
                 "title": "Process Safety",
                 "items": [
-                    "PTW",
-                    "LOTO",
-                    "PSSR",
-                    "H₂S",
-                    "Cause & Effect"
+                    "Permit to Work (PTW)",
+                    "Lockout/Tagout (LOTO)",
+                    "Process Safety Management (PSM)",
+                    "H₂S Monitoring & Emergency Response",
+                    "Cause & Effect Analysis"
                 ]
             },
             {
                 "title": "Engineering Documents",
                 "items": [
-                    "PFD",
-                    "P&ID",
-                    "Operating Procedures",
-                    "Process Documentation"
+                    "P&ID Interpretation",
+                    "PFD Interpretation",
+                    "Operating Procedures (SOPs)",
+                    "Technical Documentation"
                 ]
             },
             {
-                "title": "Digital Skills",
+                "title": "Equipment & Systems",
                 "items": [
-                    "Python",
-                    "C / C++",
-                    "C#",
-                    "Excel VBA",
-                    "Google Apps Script"
+                    "WHCP, HPU & Umbilical Monitoring",
+                    "Chemical Injection Systems",
+                    "Rotating & Static Equipment",
+                    "Subsea Systems & Wellhead Operations",
+                    "Preventive & Corrective Maintenance"
                 ]
             },
             {
-                "title": "Current Technical Focus",
+                "title": "Digital & Reporting",
                 "items": [
-                    "DRI",
-                    "MIDREX",
-                    "Reduction Gas",
-                    "Reforming",
-                    "Gas Recycling"
+                    "Excel VBA Automation",
+                    "Production Reporting",
+                    "Data Consolidation & Trend Analysis",
+                    "Shift Logs & Safety Reports"
                 ]
             }
         ]

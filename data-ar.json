@@ -2,9 +2,9 @@
     "meta": {
         "lang": "ar",
         "dir": "rtl",
-        "title": "أحمد سعيد حواش | فني عمليات | Oil & Gas وDRI وMIDREX",
-        "description": "أحمد سعيد حواش — فني عمليات في Ezz Steel، بخبرة في عمليات Oil & Gas وسلامة العمليات وأنظمة DCS وICSS وعمليات DRI/MIDREX.",
-        "keywords": "أحمد سعيد حواش، Operations Technician، Ezz Steel، Oil & Gas، Process Safety، DCS، ICSS، DRI، MIDREX، Alexandria Egypt",
+        "title": "أحمد سعيد حواش | فني تشغيل | Oil & Gas & Petrochemical",
+        "description": "أحمد سعيد حواش — فني تشغيل في Ezz Steel، بخبرة تزيد على 3 سنوات في عمليات إنتاج Oil & Gas البحرية، ومعالجة Petrochemical، وعمليات DCS/ICSS وإدارة Process Safety.",
+        "keywords": "أحمد سعيد حواش، فني تشغيل، Ezz Steel، Oil & Gas، Offshore Production، Petrochemical، Process Safety، DCS، ICSS، PSM، Alexandria Egypt",
         "theme_color": "#0b63ce"
     },
     "nav": {
@@ -21,12 +21,12 @@
         "switch_lang_label": "Switch to English"
     },
     "hero": {
-        "eyebrow": "OPERATIONS • PROCESS SAFETY • INDUSTRIAL OPERATIONS",
+        "eyebrow": "OFFSHORE OIL & GAS • PETROCHEMICAL • PROCESS SAFETY",
         "name_line1": "أحمد سعيد",
         "name_line2": "حواش",
-        "title": "فني عمليات في Ezz Steel",
-        "description": "متخصص في العمليات الصناعية، أمتلك خبرة في قطاعَي Oil & Gas والصناعات الثقيلة، مع تركيز على العمليات الميدانية وعمليات غرفة التحكم ومراقبة العمليات وتشغيل المصانع وفق ممارسات التشغيل الآمن.",
-        "btn_primary": "تعرّف على مسيرتي المهنية",
+        "title": "فني تشغيل في Ezz Steel",
+        "description": "متخصص في العمليات الصناعية بخبرة تزيد على 3 سنوات في عمليات إنتاج Oil & Gas البحرية، ومعالجة Petrochemical، والعمليات الصناعية — متخصص في عمليات DCS/ICSS، ومراقبة العمليات، وتحسين الإنتاج، وإدارة Process Safety.",
+        "btn_primary": "استكشف مسيرتي المهنية",
         "btn_secondary": "عرض السيرة الذاتية",
         "links": {
             "linkedin": "LinkedIn",
@@ -34,23 +34,23 @@
             "twitter": "Twitter / X"
         },
         "card": {
-            "job_title": "فني عمليات",
+            "job_title": "فني تشغيل",
             "company": "Ezz Steel / EZDK",
-            "status": "على رأس العمل حاليًا"
+            "status": "أعمل حالياً"
         }
     },
     "about": {
         "label": "نبذة عني",
         "title": "الملف المهني",
-        "large_text": "أنا فني عمليات أمتلك خبرة تزيد على ثلاث سنوات في عمليات الإنتاج الصناعي بقطاعَي Oil & Gas والصناعات الثقيلة.",
+        "large_text": "أنا متخصص في العمليات بخبرة تزيد على 3 سنوات في عمليات إنتاج Oil & Gas البحرية، ومعالجة Petrochemical، والعمليات الصناعية.",
         "paragraphs": [
-            "تجمع خبرتي بين العمليات الميدانية والعمل في غرفة التحكم، وتشمل خبرة عملية في مراقبة العمليات، واستكشاف الأعطال ومعالجتها، وأنشطة بدء التشغيل والإيقاف، وأنظمة Process Safety وإجراءات التشغيل.",
-            "أعمل حاليًا في Ezz Steel / EZDK، وأسعى إلى توسيع خبرتي في عمليات مصانع الصلب، مع اهتمام خاص بعمليات الاختزال المباشر المعتمدة على DRI وMIDREX."
+            "تشمل خبرتي عمليات DCS/ICSS، ومراقبة العمليات، وتحسين الإنتاج، وإدارة Process Safety عبر منصات بحرية ومرافق معالجة كيميائية. عملت على أنظمة الإنتاج البحري، والآبار Subsea، ووحدات إنتاج Chlorinated Paraffins، والأنظمة المساعدة المرتبطة بها.",
+            "حالياً، أواصل تطوير خبرتي في العمليات الصناعية من خلال تدريب فني في تصنيع الصلب في Ezz Steel / EZDK، بناءً على أساس قوي في عمليات التشغيل، وأنظمة السلامة، واستكشاف الأعطال ومعالجتها، والتحسين المستمر."
         ],
         "info": [
             {
                 "label": "المسمى الوظيفي الحالي",
-                "value": "Operations Technician"
+                "value": "فني تشغيل متدرب (Operations Technician Trainee)"
             },
             {
                 "label": "الشركة",
@@ -58,7 +58,7 @@
             },
             {
                 "label": "القطاع",
-                "value": "Steel / Oil & Gas"
+                "value": "Steel / Oil & Gas / Petrochemical"
             },
             {
                 "label": "الموقع",
@@ -72,58 +72,60 @@
         "items": [
             {
                 "date": "يوليو 2026 – حتى الآن",
-                "job_title": "فني عمليات متدرب (Operations Technician Trainee)",
+                "job_title": "فني تشغيل متدرب (Operations Technician Trainee)",
                 "company": "Al Ezz Dekheila Steel Co. (EZDK) — Ezz Steel",
                 "logo": "ezz-logo.png",
                 "logo_alt": "Ezz Steel Logo",
                 "bg": "ezz-bg.jpg",
-                "description": "العمل ضمن بيئة تصنيع الصلب في مجال العمليات الصناعية، مع تطوير المعرفة العملية بتشغيل المصنع وأنظمة العمليات والمعدات وتطبيق ممارسات التشغيل الآمن.",
+                "description": "أخضع حالياً لتدريب تشغيلي وفني على عمليات تصنيع الصلب، وعمليات المصنع، ومعايير السلامة الصناعية. أطوّر معرفة عملية بأنظمة الإنتاج، وإجراءات التشغيل، وأفضل الممارسات الصناعية.",
                 "list": [],
                 "tags": [
                     "Steel Operations",
-                    "DRI",
-                    "MIDREX",
-                    "Process Operations"
+                    "Plant Operations",
+                    "Industrial Safety",
+                    "Process Training"
                 ]
             },
             {
-                "date": "سبتمبر 2024 – يوليو 2026",
+                "date": "أكتوبر 2024 – يونيو 2026",
                 "job_title": "مشغل إنتاج بحري (Offshore Production Operator)",
                 "company": "Abu Qir Petroleum Company",
                 "logo": "abuqir-logo.png",
                 "logo_alt": "Abu Qir Petroleum Logo",
                 "bg": "Ahmed-Saied-Hawash_abuqir-bg.jpg",
-                "description": "المشاركة في عمليات الإنتاج البحري من خلال مهام ميدانية وأنشطة غرفة التحكم، ومراقبة العمليات وتشغيل المعدات واستكشاف الأعطال ومعالجتها، مع الالتزام بمتطلبات الإنتاج الآمن.",
+                "description": "شغّلت وراقبت أنظمة الإنتاج البحري (DCS/ICSS والميدان) عبر منصات متعددة وآبار Subsea في حقل أبو قير الشمالي، مع ضمان عمليات آمنة وفعالة وفقاً لـ SOPs و Process Safety Management (PSM).",
                 "list": [
-                    "خبرة عملية في التعامل مع DeltaV Emerson DCS وICSS.",
-                    "التعامل مع أنظمة SCADA وأنظمة Fire & Gas.",
-                    "معرفة بأنظمة ESD وPSD وLSD.",
-                    "قراءة Cause & Effect Matrix وتفسير مخططات P&ID وPFD.",
-                    "اتباع إجراءات Permit to Work وLOTO.",
-                    "المشاركة ممثلًا عن قسم الإنتاج في PSSR.",
-                    "اتباع ممارسات السلامة المتعلقة بـ H₂S وProcess Safety."
+                    "إدارة معدلات إنتاج تصل إلى 140 MMSCFD من الغاز و 3,500 BBL/D من الزيت.",
+                    "تصميم وإدخال نظام أتمتة تقارير الإنتاج باستخدام Excel VBA متكامل مع بوت توزيع على Telegram، مما قلّل العمل اليدوي بنحو 8 ساعات أسبوعياً.",
+                    "تنسيق والإشراف على عمليات منصتين بحريتين غير مأهولتين من المنصة الرئيسية، بما في ذلك الفحوصات الميدانية ودعم الصيانة.",
+                    "مراقبة ودعم WHCP و HPU و Umbilical وأنظمة حقن الكيماويات والمرافق الإنتاجية المرتبطة بها.",
+                    "دعم أنشطة استكشاف الأعطال والتعاون مع فرق الهندسة والصيانة لتحسين موثوقية المعدات وأداء المصنع."
                 ],
                 "tags": [
                     "Oil & Gas",
                     "DCS",
                     "ICSS",
-                    "SCADA",
+                    "Subsea Systems",
                     "Process Safety"
                 ]
             },
             {
-                "date": "مارس 2023 – سبتمبر 2024",
+                "date": "مارس 2023 – أغسطس 2024",
                 "job_title": "فني إنتاج (Production Technician)",
-                "company": "International Industrial Chemical Park",
+                "company": "International Industrial Chemical Park (IICP)",
                 "logo": "iicp-logo.png",
                 "logo_alt": "Chemical Park Logo",
                 "bg": "Ahmed-Saied-Hawash_iicp-bg.jpg",
-                "description": "تنفيذ مهام الإنتاج في بيئة للصناعات الكيميائية، شملت تشغيل Batch Reactors، وإضافة المواد الكيميائية بالجرعات المحددة، وعمليات الامتصاص ومراقبة العمليات.",
-                "list": [],
+                "description": "تحكّمت في تفاعلات الكلورة لـ Heavy Liquid Paraffin (HLP) في إنتاج Chlorinated Paraffins (CPs 45%:52%)، مع تحسين تركيز الكلور للوصول إلى مواصفات المنتج.",
+                "list": [
+                    "تشغيل أنظمة الامتصاص ومعالجة الغاز العادم لإنتاج Hydrochloric Acid (HCl 32%) و Sodium Hypochlorite (NaOCl 18%) كمنتجات ثانوية.",
+                    "تشغيل وصيانة معدات العمليات بما في ذلك المفاعلات، والمفاعلات المعززة بـ UV، والمبادلات الحرارية، والمضخات، والمنافيخ، ووحدات إزالة الغازات.",
+                    "ضمان التعامل الآمن مع الكلور و HCl و NaOCl والمواد الكيميائية الخطرة الأخرى وفقاً لإجراءات التشغيل والسلامة."
+                ],
                 "tags": [
                     "Chemical Operations",
                     "Batch Process",
-                    "Process Monitoring",
+                    "Reactor Operations",
                     "Safety"
                 ]
             }
@@ -136,53 +138,48 @@
         "items": [
             {
                 "logo": "opito-logo.png",
-                "logo_alt": "شعار أوبيتو",
+                "logo_alt": "شعار OPITO",
                 "title": "BOSIET + HUET",
-                "issuer": "OPITO Approved",
+                "issuer": "OPITO Approved — Arab Academy for Science, Technology & Maritime Transport",
                 "date": "تاريخ الإصدار: أكتوبر 2025 • تاريخ الانتهاء: أكتوبر 2029",
                 "image": "cert-bosiet.jpg",
-                "image_alt": "BOSIET + HUET Certificate Preview",
-                "pdf": "certificates/BOSIET-HUET.pdf"
+                "image_alt": "BOSIET + HUET Certificate Preview"
             },
             {
                 "logo": "nasp-logo.png",
-                "logo_alt": "شعار ناسب",
-                "title": "OSHA 30-Hour",
-                "issuer": "General Industry",
-                "date": "معتمدة من NASP • أبريل 2025",
+                "logo_alt": "شعار NASP",
+                "title": "OSHA 30-Hour General Industry",
+                "issuer": "NASP Approved — Egyptian Syndicate of Scientific Professions",
+                "date": "تاريخ الإصدار: أبريل 2025 • Code: 648951",
                 "image": "cert-osha.jpg",
-                "image_alt": "OSHA 30-Hour Certificate Preview",
-                "pdf": "certificates/OSHA-30.pdf"
+                "image_alt": "OSHA 30-Hour Certificate Preview"
             },
             {
                 "logo": "abuqir-logo.png",
-                "logo_alt": "شعار بترول أبو قير",
+                "logo_alt": "شعار Abu Qir Petroleum",
                 "title": "Life Saving Rules",
-                "issuer": "Abu Qir Petroleum",
-                "date": "سبتمبر 2025",
+                "issuer": "Abu Qir Petroleum Company",
+                "date": "تاريخ الإصدار: سبتمبر 2025 • Code: 7317",
                 "image": "cert-life-saving.jpg",
-                "image_alt": "Life Saving Rules Certificate Preview",
-                "pdf": "certificates/Life-Saving-Rules.pdf"
+                "image_alt": "Life Saving Rules Certificate Preview"
             },
             {
                 "logo": "petroleum-logo.png",
-                "logo_alt": "شعار تدريب صناعة البترول",
-                "title": "Petroleum Industry Fundamentals",
-                "issuer": "44-Hour Program",
-                "date": "برنامج تدريبي في أساسيات صناعة البترول",
+                "logo_alt": "شعار Petroleum Industry Training",
+                "title": "Petroleum Industry Fundamentals (44 Hours)",
+                "issuer": "Egyptian Syndicate of Scientific Professions",
+                "date": "تاريخ الإصدار: يوليو 2024 • Code: C15S346",
                 "image": "cert-petroleum.jpg",
-                "image_alt": "Petroleum Industry Fundamentals Certificate Preview",
-                "pdf": "certificates/Petroleum-Industry-Fundamentals.pdf"
+                "image_alt": "Petroleum Industry Fundamentals Certificate Preview"
             },
             {
                 "logo": "gammaltech-logo.png",
-                "logo_alt": "شعار جمال تك",
+                "logo_alt": "شعار Gammal Tech",
                 "title": "Cybersecurity 101",
-                "issuer": "Gammal Tech",
-                "date": "فبراير 2026",
+                "issuer": "Gammal Tech Academy",
+                "date": "تاريخ الإصدار: فبراير 2026 • Code: GT-2026-000080",
                 "image": "cert-cybersecurity.jpg",
-                "image_alt": "Cybersecurity 101 Certificate Preview",
-                "pdf": "certificates/Cybersecurity-101.pdf"
+                "image_alt": "Cybersecurity 101 Certificate Preview"
             }
         ]
     },
@@ -191,12 +188,12 @@
         "title": "المؤهل العلمي والتدريب",
         "year": "2020",
         "degree": "دبلوم فني متقدم",
-        "field": "تكنولوجيا البتروكيماويات",
+        "field": "Petrochemical Technology (تكنولوجيا البتروكيماويات)",
         "school": "El-Wardian Advanced Technical Industrial School",
         "stats": [
-            "التقدير: ممتاز",
+            "التقدير: Excellent",
             "المجموع: 88.1%",
-            "المركز الثامن بين طلاب تخصص البتروكيماويات"
+            "المركز الثامن بين طلاب Petrochemical"
         ]
     },
     "skills": {
@@ -206,60 +203,59 @@
             {
                 "title": "العمليات",
                 "items": [
-                    "العمليات الميدانية",
-                    "عمليات غرفة التحكم",
-                    "مراقبة العمليات",
-                    "استكشاف الأعطال ومعالجتها",
-                    "بدء التشغيل والإيقاف (Startup & Shutdown)"
+                    "Field Operations",
+                    "Control Room Operations",
+                    "Process Monitoring",
+                    "Production Optimization",
+                    "Troubleshooting & Root Cause Analysis"
                 ]
             },
             {
                 "title": "أنظمة التحكم",
                 "items": [
-                    "Emerson DeltaV",
+                    "Emerson DeltaV DCS",
                     "ICSS",
                     "SCADA",
-                    "Fire & Gas",
-                    "ESD / PSD / LSD"
+                    "Fire & Gas Systems",
+                    "Emergency Shutdown (ESD / PSD / LSD)"
                 ]
             },
             {
-                "title": "سلامة العمليات",
+                "title": "Process Safety",
                 "items": [
-                    "PTW",
-                    "LOTO",
-                    "PSSR",
-                    "H₂S",
-                    "Cause & Effect"
+                    "Permit to Work (PTW)",
+                    "Lockout/Tagout (LOTO)",
+                    "Process Safety Management (PSM)",
+                    "H₂S Monitoring & Emergency Response",
+                    "Cause & Effect Analysis"
                 ]
             },
             {
-                "title": "المستندات الفنية والهندسية",
+                "title": "المستندات الهندسية",
                 "items": [
-                    "PFD",
-                    "P&ID",
-                    "إجراءات التشغيل (Operating Procedures)",
-                    "توثيق العمليات (Process Documentation)"
+                    "P&ID Interpretation",
+                    "PFD Interpretation",
+                    "Operating Procedures (SOPs)",
+                    "Technical Documentation"
                 ]
             },
             {
-                "title": "المهارات الرقمية",
+                "title": "المعدات والأنظمة",
                 "items": [
-                    "Python",
-                    "C / C++",
-                    "C#",
-                    "Excel VBA",
-                    "Google Apps Script"
+                    "WHCP, HPU & Umbilical Monitoring",
+                    "Chemical Injection Systems",
+                    "Rotating & Static Equipment",
+                    "Subsea Systems & Wellhead Operations",
+                    "Preventive & Corrective Maintenance"
                 ]
             },
             {
-                "title": "مجالات التركيز التقني الحالية",
+                "title": "المهارات الرقمية والتقارير",
                 "items": [
-                    "DRI",
-                    "MIDREX",
-                    "Reduction Gas",
-                    "Reforming",
-                    "Gas Recycling"
+                    "Excel VBA Automation",
+                    "Production Reporting",
+                    "Data Consolidation & Trend Analysis",
+                    "Shift Logs & Safety Reports"
                 ]
             }
         ]
@@ -335,6 +331,6 @@
     },
     "footer": {
         "copyright": "أحمد سعيد حواش",
-        "tagline": "فني عمليات • Ezz Steel"
+        "tagline": "فني تشغيل • Ezz Steel"
     }
 }
