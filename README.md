@@ -323,4 +323,3 @@ _Made with ❤️ in Alexandria, Egypt_
 © 2026 Ahmed Saied Hawash. All rights reserved.
 
 </div>
-  
