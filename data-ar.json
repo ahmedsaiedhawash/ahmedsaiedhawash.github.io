@@ -2,31 +2,31 @@
     "meta": {
         "lang": "ar",
         "dir": "rtl",
-        "title": "أحمد سعيد حواش | فني عمليات | نفط وغاز، DRI & MIDREX",
-        "description": "أحمد سعيد حواش — فني عمليات في حديد عز، بخبرة في عمليات النفط والغاز، سلامة العمليات، DCS، ICSS وعمليات DRI/MIDREX.",
-        "keywords": "أحمد سعيد حواش، فني عمليات، حديد عز، نفط وغاز، سلامة العمليات، DCS، ICSS، DRI، MIDREX، الإسكندرية",
+        "title": "أحمد سعيد حواش | فني عمليات | Oil & Gas وDRI وMIDREX",
+        "description": "أحمد سعيد حواش — فني عمليات في Ezz Steel، بخبرة في عمليات Oil & Gas وسلامة العمليات وأنظمة DCS وICSS وعمليات DRI/MIDREX.",
+        "keywords": "أحمد سعيد حواش، Operations Technician، Ezz Steel، Oil & Gas، Process Safety، DCS، ICSS، DRI، MIDREX، Alexandria Egypt",
         "theme_color": "#0b63ce"
     },
     "nav": {
         "brand": "AH",
         "home": "الرئيسية",
         "about": "نبذة عني",
-        "career": "الخبرات",
-        "certifications": "الشهادات",
+        "career": "المسيرة المهنية",
+        "certifications": "الشهادات المهنية",
         "education": "التعليم",
-        "skills": "المهارات",
+        "skills": "المهارات التقنية",
         "cv": "السيرة الذاتية",
-        "contact": "اتصل بي",
+        "contact": "تواصل معي",
         "switch_lang": "English",
         "switch_lang_label": "Switch to English"
     },
     "hero": {
-        "eyebrow": "عمليات • سلامة العمليات • العمليات الصناعية",
+        "eyebrow": "OPERATIONS • PROCESS SAFETY • INDUSTRIAL OPERATIONS",
         "name_line1": "أحمد سعيد",
         "name_line2": "حواش",
-        "title": "فني تشغيل في حديد عز",
-        "description": "محترف عمليات صناعية بخبرة في قطاع النفط والغاز والصناعات الثقيلة، مع التركيز على العمليات الميدانية، عمليات غرفة التحكم، مراقبة العمليات وتشغيل المصانع بأمان.",
-        "btn_primary": "استكشف مسيرتي المهنية",
+        "title": "فني عمليات في Ezz Steel",
+        "description": "متخصص في العمليات الصناعية، أمتلك خبرة في قطاعَي Oil & Gas والصناعات الثقيلة، مع تركيز على العمليات الميدانية وعمليات غرفة التحكم ومراقبة العمليات وتشغيل المصانع وفق ممارسات التشغيل الآمن.",
+        "btn_primary": "تعرّف على مسيرتي المهنية",
         "btn_secondary": "عرض السيرة الذاتية",
         "links": {
             "linkedin": "LinkedIn",
@@ -34,169 +34,169 @@
             "twitter": "Twitter / X"
         },
         "card": {
-            "job_title": "فني تشغيل",
-            "company": "حديد عز / EZDK",
-            "status": "أعمل حالياً"
+            "job_title": "فني عمليات",
+            "company": "Ezz Steel / EZDK",
+            "status": "على رأس العمل حاليًا"
         }
     },
     "about": {
         "label": "نبذة عني",
         "title": "الملف المهني",
-        "large_text": "أنا فني تشغيل بخبرة تزيد عن ثلاث سنوات في عمليات الإنتاج الصناعي في قطاعي النفط والغاز والصناعات الثقيلة.",
+        "large_text": "أنا فني عمليات أمتلك خبرة تزيد على ثلاث سنوات في عمليات الإنتاج الصناعي بقطاعَي Oil & Gas والصناعات الثقيلة.",
         "paragraphs": [
-            "تجمع خبرتي بين العمليات الميدانية وأنشطة غرفة التحكم، مع تعرض عملي لمراقبة العمليات، استكشاف الأخطاء وإصلاحها، أنشطة البدء والإيقاف، أنظمة سلامة العمليات وإجراءات التشغيل.",
-            "أعمل حالياً في حديد عز / EZDK، وأطور خبرتي في عمليات مصانع الصلب مع اهتمام خاص بعمليات الاختزال المباشر DRI و MIDREX."
+            "تجمع خبرتي بين العمليات الميدانية والعمل في غرفة التحكم، وتشمل خبرة عملية في مراقبة العمليات، واستكشاف الأعطال ومعالجتها، وأنشطة بدء التشغيل والإيقاف، وأنظمة Process Safety وإجراءات التشغيل.",
+            "أعمل حاليًا في Ezz Steel / EZDK، وأسعى إلى توسيع خبرتي في عمليات مصانع الصلب، مع اهتمام خاص بعمليات الاختزال المباشر المعتمدة على DRI وMIDREX."
         ],
         "info": [
             {
-                "label": "الدور الحالي",
-                "value": "فني عمليات"
+                "label": "المسمى الوظيفي الحالي",
+                "value": "Operations Technician"
             },
             {
                 "label": "الشركة",
-                "value": "حديد عز / EZDK"
+                "value": "Ezz Steel / EZDK"
             },
             {
-                "label": "الصناعة",
-                "value": "صلب / نفط وغاز"
+                "label": "القطاع",
+                "value": "Steel / Oil & Gas"
             },
             {
                 "label": "الموقع",
-                "value": "الإسكندرية، مصر"
+                "value": "Alexandria, Egypt"
             }
         ]
     },
     "career": {
-        "label": "الخبرات",
-        "title": "الخبرة المهنية",
+        "label": "المسيرة المهنية",
+        "title": "الخبرة العملية",
         "items": [
             {
                 "date": "يوليو 2026 – حتى الآن",
-                "job_title": "فني عمليات متدرب",
-                "company": "شركة الحديد والصلب الدخيلة (EZDK) — حديد عز",
+                "job_title": "فني عمليات متدرب (Operations Technician Trainee)",
+                "company": "Al Ezz Dekheila Steel Co. (EZDK) — Ezz Steel",
                 "logo": "ezz-logo.png",
-                "logo_alt": "شعار حديد عز",
+                "logo_alt": "Ezz Steel Logo",
                 "bg": "ezz-bg.jpg",
-                "description": "دور عمليات صناعية داخل بيئة تصنيع الصلب، لتطوير المعرفة العملية بعمليات المصنع، أنظمة العمليات، المعدات وممارسات التشغيل الآمن.",
+                "description": "العمل ضمن بيئة تصنيع الصلب في مجال العمليات الصناعية، مع تطوير المعرفة العملية بتشغيل المصنع وأنظمة العمليات والمعدات وتطبيق ممارسات التشغيل الآمن.",
                 "list": [],
                 "tags": [
-                    "عمليات الصلب",
+                    "Steel Operations",
                     "DRI",
                     "MIDREX",
-                    "عمليات التشغيل"
+                    "Process Operations"
                 ]
             },
             {
                 "date": "سبتمبر 2024 – يوليو 2026",
-                "job_title": "مشغل إنتاج بحري",
-                "company": "شركة بترول أبو قير",
+                "job_title": "مشغل إنتاج بحري (Offshore Production Operator)",
+                "company": "Abu Qir Petroleum Company",
                 "logo": "abuqir-logo.png",
-                "logo_alt": "شعار بترول أبو قير",
+                "logo_alt": "Abu Qir Petroleum Logo",
                 "bg": "Ahmed-Saied-Hawash_abuqir-bg.jpg",
-                "description": "العمل في عمليات الإنتاج البحري التي تغطي الأنشطة الميدانية وغرفة التحكم، مراقبة العمليات، تشغيل المعدات، استكشاف الأخطاء وإصلاحها والإنتاج الآمن.",
+                "description": "المشاركة في عمليات الإنتاج البحري من خلال مهام ميدانية وأنشطة غرفة التحكم، ومراقبة العمليات وتشغيل المعدات واستكشاف الأعطال ومعالجتها، مع الالتزام بمتطلبات الإنتاج الآمن.",
                 "list": [
-                    "التعرض لنظام DeltaV Emerson DCS و ICSS.",
-                    "أنظمة SCADA وأنظمة الحريق والغاز.",
-                    "أنظمة ESD و PSD و LSD.",
-                    "مصفوفة الأسباب والنتائج، قراءة P&ID و PFD.",
-                    "ممارسات تصريح العمل و LOTO.",
-                    "المشاركة كممثل إنتاج في PSSR.",
-                    "ممارسات H₂S وسلامة العمليات."
+                    "خبرة عملية في التعامل مع DeltaV Emerson DCS وICSS.",
+                    "التعامل مع أنظمة SCADA وأنظمة Fire & Gas.",
+                    "معرفة بأنظمة ESD وPSD وLSD.",
+                    "قراءة Cause & Effect Matrix وتفسير مخططات P&ID وPFD.",
+                    "اتباع إجراءات Permit to Work وLOTO.",
+                    "المشاركة ممثلًا عن قسم الإنتاج في PSSR.",
+                    "اتباع ممارسات السلامة المتعلقة بـ H₂S وProcess Safety."
                 ],
                 "tags": [
-                    "نفط وغاز",
+                    "Oil & Gas",
                     "DCS",
                     "ICSS",
                     "SCADA",
-                    "سلامة العمليات"
+                    "Process Safety"
                 ]
             },
             {
                 "date": "مارس 2023 – سبتمبر 2024",
-                "job_title": "فني إنتاج",
-                "company": "الحديقة الصناعية الكيميائية الدولية",
+                "job_title": "فني إنتاج (Production Technician)",
+                "company": "International Industrial Chemical Park",
                 "logo": "iicp-logo.png",
-                "logo_alt": "شعار الحديقة الكيميائية",
+                "logo_alt": "Chemical Park Logo",
                 "bg": "Ahmed-Saied-Hawash_iicp-bg.jpg",
-                "description": "عمليات الإنتاج في بيئة تصنيع كيميائية تشمل المفاعلات الدفعية، الجرعات الكيميائية، الامتصاص ومراقبة العمليات.",
+                "description": "تنفيذ مهام الإنتاج في بيئة للصناعات الكيميائية، شملت تشغيل Batch Reactors، وإضافة المواد الكيميائية بالجرعات المحددة، وعمليات الامتصاص ومراقبة العمليات.",
                 "list": [],
                 "tags": [
-                    "عمليات كيميائية",
-                    "عملية دفعية",
-                    "مراقبة العمليات",
-                    "السلامة"
+                    "Chemical Operations",
+                    "Batch Process",
+                    "Process Monitoring",
+                    "Safety"
                 ]
             }
         ]
     },
     "certifications": {
-        "label": "الشهادات",
-        "title": "الشهادات المهنية",
-        "subtext": "انقر على أي شهادة لتكبيرها.",
+        "label": "الشهادات المهنية",
+        "title": "الشهادات والاعتمادات المهنية",
+        "subtext": "اضغط على أي شهادة لعرضها بحجم أكبر.",
         "items": [
             {
                 "logo": "opito-logo.png",
                 "logo_alt": "شعار أوبيتو",
                 "title": "BOSIET + HUET",
-                "issuer": "معتمدة من OPITO",
-                "date": "صدرت أكتوبر 2025 • تنتهي أكتوبر 2029",
+                "issuer": "OPITO Approved",
+                "date": "تاريخ الإصدار: أكتوبر 2025 • تاريخ الانتهاء: أكتوبر 2029",
                 "image": "cert-bosiet.jpg",
-                "image_alt": "معاينة شهادة BOSIET + HUET",
+                "image_alt": "BOSIET + HUET Certificate Preview",
                 "pdf": "certificates/BOSIET-HUET.pdf"
             },
             {
                 "logo": "nasp-logo.png",
                 "logo_alt": "شعار ناسب",
                 "title": "OSHA 30-Hour",
-                "issuer": "الصناعة العامة",
+                "issuer": "General Industry",
                 "date": "معتمدة من NASP • أبريل 2025",
                 "image": "cert-osha.jpg",
-                "image_alt": "معاينة شهادة OSHA",
+                "image_alt": "OSHA 30-Hour Certificate Preview",
                 "pdf": "certificates/OSHA-30.pdf"
             },
             {
                 "logo": "abuqir-logo.png",
                 "logo_alt": "شعار بترول أبو قير",
-                "title": "قواعد إنقاذ الحياة",
-                "issuer": "بترول أبو قير",
+                "title": "Life Saving Rules",
+                "issuer": "Abu Qir Petroleum",
                 "date": "سبتمبر 2025",
                 "image": "cert-life-saving.jpg",
-                "image_alt": "معاينة شهادة قواعد إنقاذ الحياة",
+                "image_alt": "Life Saving Rules Certificate Preview",
                 "pdf": "certificates/Life-Saving-Rules.pdf"
             },
             {
                 "logo": "petroleum-logo.png",
                 "logo_alt": "شعار تدريب صناعة البترول",
-                "title": "أساسيات صناعة البترول",
-                "issuer": "برنامج 44 ساعة",
-                "date": "تدريب صناعة البترول",
+                "title": "Petroleum Industry Fundamentals",
+                "issuer": "44-Hour Program",
+                "date": "برنامج تدريبي في أساسيات صناعة البترول",
                 "image": "cert-petroleum.jpg",
-                "image_alt": "معاينة شهادة أساسيات صناعة البترول",
+                "image_alt": "Petroleum Industry Fundamentals Certificate Preview",
                 "pdf": "certificates/Petroleum-Industry-Fundamentals.pdf"
             },
             {
                 "logo": "gammaltech-logo.png",
                 "logo_alt": "شعار جمال تك",
-                "title": "الأمن السيبراني 101",
-                "issuer": "جمال تك",
+                "title": "Cybersecurity 101",
+                "issuer": "Gammal Tech",
                 "date": "فبراير 2026",
                 "image": "cert-cybersecurity.jpg",
-                "image_alt": "معاينة شهادة الأمن السيبراني",
+                "image_alt": "Cybersecurity 101 Certificate Preview",
                 "pdf": "certificates/Cybersecurity-101.pdf"
             }
         ]
     },
     "education": {
         "label": "التعليم",
-        "title": "التعليم والتدريب",
+        "title": "المؤهل العلمي والتدريب",
         "year": "2020",
         "degree": "دبلوم فني متقدم",
         "field": "تكنولوجيا البتروكيماويات",
-        "school": "مدرسة الورديان الفنية الصناعية المتقدمة",
+        "school": "El-Wardian Advanced Technical Industrial School",
         "stats": [
-            "ممتاز",
-            "مجموع 88.1%",
-            "الثامن على طلاب البتروكيماويات"
+            "التقدير: ممتاز",
+            "المجموع: 88.1%",
+            "المركز الثامن بين طلاب تخصص البتروكيماويات"
         ]
     },
     "skills": {
@@ -209,8 +209,8 @@
                     "العمليات الميدانية",
                     "عمليات غرفة التحكم",
                     "مراقبة العمليات",
-                    "استكشاف الأخطاء وإصلاحها",
-                    "البدء والإيقاف"
+                    "استكشاف الأعطال ومعالجتها",
+                    "بدء التشغيل والإيقاف (Startup & Shutdown)"
                 ]
             },
             {
@@ -219,7 +219,7 @@
                     "Emerson DeltaV",
                     "ICSS",
                     "SCADA",
-                    "الحريق والغاز",
+                    "Fire & Gas",
                     "ESD / PSD / LSD"
                 ]
             },
@@ -230,16 +230,16 @@
                     "LOTO",
                     "PSSR",
                     "H₂S",
-                    "الأسباب والنتائج"
+                    "Cause & Effect"
                 ]
             },
             {
-                "title": "المستندات الهندسية",
+                "title": "المستندات الفنية والهندسية",
                 "items": [
                     "PFD",
                     "P&ID",
-                    "إجراءات التشغيل",
-                    "توثيق العمليات"
+                    "إجراءات التشغيل (Operating Procedures)",
+                    "توثيق العمليات (Process Documentation)"
                 ]
             },
             {
@@ -253,77 +253,77 @@
                 ]
             },
             {
-                "title": "التركيز التقني الحالي",
+                "title": "مجالات التركيز التقني الحالية",
                 "items": [
                     "DRI",
                     "MIDREX",
-                    "غاز الاختزال",
-                    "الإصلاح",
-                    "إعادة تدوير الغاز"
+                    "Reduction Gas",
+                    "Reforming",
+                    "Gas Recycling"
                 ]
             }
         ]
     },
     "cv": {
         "label": "السيرة الذاتية",
-        "title": "عرض سيرتي الذاتية",
-        "description": "قم بتحميل أو عرض سيرتي الذاتية المهنية الحالية التي تحتوي على خبرتي الكاملة، تعليمي، شهاداتي ومهاراتي التقنية.",
+        "title": "السيرة الذاتية المهنية",
+        "description": "يمكنك عرض سيرتي الذاتية الحالية أو تنزيلها للاطلاع على خبراتي العملية ومؤهلاتي التعليمية وشهاداتي ومهاراتي التقنية.",
         "button": "عرض السيرة الذاتية"
     },
     "contact": {
-        "label": "اتصل بي",
-        "title": "تواصل معي",
-        "subtext": "لا تتردد في التواصل من خلال أي من هذه القنوات.",
+        "label": "تواصل معي",
+        "title": "يسعدني تواصلك",
+        "subtext": "يمكنك التواصل معي عبر أي من القنوات التالية.",
         "items": [
             {
                 "platform": "facebook",
-                "title": "فيسبوك",
-                "value": "أحمد سعيد حواش",
+                "title": "Facebook",
+                "value": "Ahmed Saied Hawash",
                 "href": "https://www.facebook.com/AhmedSaiedHawash/"
             },
             {
                 "platform": "linkedin",
-                "title": "لينكد إن",
-                "value": "الملف المهني",
+                "title": "LinkedIn",
+                "value": "Professional profile",
                 "href": "https://www.linkedin.com/in/ahmedsaiedhawash/"
             },
             {
                 "platform": "github",
-                "title": "جيت هاب",
-                "value": "الكود والمشاريع",
+                "title": "GitHub",
+                "value": "Code & projects",
                 "href": "https://github.com/ahmedsaiedhawash"
             },
             {
                 "platform": "instagram",
-                "title": "إنستغرام",
+                "title": "Instagram",
                 "value": "@ahmedsaiedhawash",
                 "href": "https://www.instagram.com/ahmedsaiedhawash/"
             },
             {
                 "platform": "twitter",
-                "title": "تويتر / X",
+                "title": "Twitter / X",
                 "value": "@ahmedsaiedhawash",
                 "href": "https://twitter.com/ahmedsaiedhawash"
             },
             {
                 "platform": "email",
-                "title": "البريد الإلكتروني",
+                "title": "Email",
                 "value": "ahmedsaiedhawash@gmail.com",
                 "href": "mailto:ahmedsaiedhawash@gmail.com"
             },
             {
                 "platform": "phone",
-                "title": "الهاتف",
+                "title": "Phone",
                 "value": "+20 10 9157 0288",
                 "href": "tel:+201091570288"
             }
         ],
         "whatsapp": {
-            "title": "تواصل عبر واتساب",
-            "description": "أسرع طريقة للوصول إليّ — عادةً أرد خلال دقائق.",
+            "title": "تواصل عبر WhatsApp",
+            "description": "للتواصل المباشر، يمكنك مراسلتي عبر WhatsApp.",
             "button": "فتح المحادثة",
             "href": "https://wa.me/201091570288?text=مرحباً%20أحمد،%20وجدت%20موقعك%20وأود%20التواصل%20معك.",
-            "tooltip": "تحدث معي"
+            "tooltip": "تواصل معي"
         }
     },
     "form": {
@@ -335,6 +335,6 @@
     },
     "footer": {
         "copyright": "أحمد سعيد حواش",
-        "tagline": "فني عمليات • حديد عز"
+        "tagline": "فني عمليات • Ezz Steel"
     }
 }
