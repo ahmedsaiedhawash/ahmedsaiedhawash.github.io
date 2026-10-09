@@ -1,0 +1,340 @@
+{
+    "meta": {
+        "lang": "en",
+        "dir": "ltr",
+        "title": "Ahmed Saied Hawash | Operations Technician | Oil & Gas, DRI & MIDREX",
+        "description": "Ahmed Saied Hawash — Operations Technician at Ezz Steel, with experience in Oil & Gas Operations, Process Safety, DCS, ICSS and DRI/MIDREX operations.",
+        "keywords": "Ahmed Saied Hawash, Operations Technician, Ezz Steel, Oil and Gas, Process Safety, DCS, ICSS, DRI, MIDREX, Alexandria Egypt, فني عمليات",
+        "theme_color": "#0b63ce"
+    },
+    "nav": {
+        "brand": "AH",
+        "home": "Home",
+        "about": "About",
+        "career": "Career",
+        "certifications": "Certifications",
+        "education": "Education",
+        "skills": "Skills",
+        "cv": "CV",
+        "contact": "Contact",
+        "switch_lang": "العربية",
+        "switch_lang_label": "Switch to Arabic"
+    },
+    "hero": {
+        "eyebrow": "OPERATIONS • PROCESS SAFETY • INDUSTRIAL OPERATIONS",
+        "name_line1": "Ahmed Saied",
+        "name_line2": "Hawash",
+        "title": "Operations Technician at Ezz Steel",
+        "description": "Industrial operations professional with experience across Oil & Gas and heavy industry, with a focus on field operations, control room operations, process monitoring and safe plant operation.",
+        "btn_primary": "Explore My Career",
+        "btn_secondary": "View CV",
+        "links": {
+            "linkedin": "LinkedIn",
+            "github": "GitHub",
+            "twitter": "Twitter / X"
+        },
+        "card": {
+            "job_title": "Operations Technician",
+            "company": "Ezz Steel / EZDK",
+            "status": "Currently working"
+        }
+    },
+    "about": {
+        "label": "ABOUT ME",
+        "title": "Professional Profile",
+        "large_text": "I am an Operations Technician with more than three years of experience in industrial production operations across Oil & Gas and heavy industry.",
+        "paragraphs": [
+            "My experience combines field operations and control room activities, with practical exposure to process monitoring, troubleshooting, startup and shutdown activities, process safety systems and operating procedures.",
+            "I am currently working at Ezz Steel / EZDK, developing my experience in steel plant operations with a particular interest in DRI and MIDREX-based direct reduction processes."
+        ],
+        "info": [
+            {
+                "label": "Current Role",
+                "value": "Operations Technician"
+            },
+            {
+                "label": "Company",
+                "value": "Ezz Steel / EZDK"
+            },
+            {
+                "label": "Industry",
+                "value": "Steel / Oil & Gas"
+            },
+            {
+                "label": "Location",
+                "value": "Alexandria, Egypt"
+            }
+        ]
+    },
+    "career": {
+        "label": "CAREER",
+        "title": "Professional Experience",
+        "items": [
+            {
+                "date": "Jul 2026 – Present",
+                "job_title": "Operations Technician Trainee",
+                "company": "Al Ezz Dekheila Steel Co. (EZDK) — Ezz Steel",
+                "logo": "ezz-logo.png",
+                "logo_alt": "Ezz Steel Logo",
+                "bg": "ezz-bg.jpg",
+                "description": "Industrial operations role within the steel manufacturing environment, developing practical knowledge of plant operations, process systems, equipment and safe operating practices.",
+                "list": [],
+                "tags": [
+                    "Steel Operations",
+                    "DRI",
+                    "MIDREX",
+                    "Process Operations"
+                ]
+            },
+            {
+                "date": "Sep 2024 – Jul 2026",
+                "job_title": "Offshore Production Operator",
+                "company": "Abu Qir Petroleum Company",
+                "logo": "abuqir-logo.png",
+                "logo_alt": "Abu Qir Petroleum Logo",
+                "bg": "Ahmed-Saied-Hawash_abuqir-bg.jpg",
+                "description": "Worked in offshore production operations covering field and control room activities, process monitoring, equipment operation, troubleshooting and safe production.",
+                "list": [
+                    "DeltaV Emerson DCS and ICSS exposure.",
+                    "SCADA and Fire & Gas systems.",
+                    "ESD, PSD and LSD systems.",
+                    "Cause & Effect Matrix, P&ID and PFD interpretation.",
+                    "Permit to Work and LOTO practices.",
+                    "PSSR production representative participation.",
+                    "H₂S and process safety practices."
+                ],
+                "tags": [
+                    "Oil & Gas",
+                    "DCS",
+                    "ICSS",
+                    "SCADA",
+                    "Process Safety"
+                ]
+            },
+            {
+                "date": "Mar 2023 – Sep 2024",
+                "job_title": "Production Technician",
+                "company": "International Industrial Chemical Park",
+                "logo": "iicp-logo.png",
+                "logo_alt": "Chemical Park Logo",
+                "bg": "Ahmed-Saied-Hawash_iicp-bg.jpg",
+                "description": "Production operations in a chemical manufacturing environment involving batch reactors, chemical dosing, absorption and process monitoring.",
+                "list": [],
+                "tags": [
+                    "Chemical Operations",
+                    "Batch Process",
+                    "Process Monitoring",
+                    "Safety"
+                ]
+            }
+        ]
+    },
+    "certifications": {
+        "label": "CERTIFICATIONS",
+        "title": "Professional Certifications",
+        "subtext": "Click any certificate preview to enlarge it.",
+        "items": [
+            {
+                "logo": "opito-logo.png",
+                "logo_alt": "OPITO Approved Logo",
+                "title": "BOSIET + HUET",
+                "issuer": "OPITO Approved",
+                "date": "Issued Oct 2025 • Expires Oct 2029",
+                "image": "cert-bosiet.jpg",
+                "image_alt": "BOSIET + HUET Certificate Preview",
+                "pdf": "certificates/BOSIET-HUET.pdf"
+            },
+            {
+                "logo": "nasp-logo.png",
+                "logo_alt": "NASP Approved Logo",
+                "title": "OSHA 30-Hour",
+                "issuer": "General Industry",
+                "date": "NASP Approved • Apr 2025",
+                "image": "cert-osha.jpg",
+                "image_alt": "OSHA 30-Hour Certificate Preview",
+                "pdf": "certificates/OSHA-30.pdf"
+            },
+            {
+                "logo": "abuqir-logo.png",
+                "logo_alt": "Abu Qir Petroleum Logo",
+                "title": "Life Saving Rules",
+                "issuer": "Abu Qir Petroleum",
+                "date": "Sep 2025",
+                "image": "cert-life-saving.jpg",
+                "image_alt": "Life Saving Rules Certificate Preview",
+                "pdf": "certificates/Life-Saving-Rules.pdf"
+            },
+            {
+                "logo": "petroleum-logo.png",
+                "logo_alt": "Petroleum Industry Training Logo",
+                "title": "Petroleum Industry Fundamentals",
+                "issuer": "44-Hour Program",
+                "date": "Petroleum Industry Training",
+                "image": "cert-petroleum.jpg",
+                "image_alt": "Petroleum Industry Fundamentals Certificate Preview",
+                "pdf": "certificates/Petroleum-Industry-Fundamentals.pdf"
+            },
+            {
+                "logo": "gammaltech-logo.png",
+                "logo_alt": "Gammal Tech Logo",
+                "title": "Cybersecurity 101",
+                "issuer": "Gammal Tech",
+                "date": "Feb 2026",
+                "image": "cert-cybersecurity.jpg",
+                "image_alt": "Cybersecurity 101 Certificate Preview",
+                "pdf": "certificates/Cybersecurity-101.pdf"
+            }
+        ]
+    },
+    "education": {
+        "label": "EDUCATION",
+        "title": "Education & Training",
+        "year": "2020",
+        "degree": "Advanced Technical Diploma",
+        "field": "Petrochemical Technology",
+        "school": "El-Wardian Advanced Technical Industrial School",
+        "stats": [
+            "Excellent",
+            "88.1% Aggregate",
+            "8th among Petrochemical Students"
+        ]
+    },
+    "skills": {
+        "label": "SKILLS",
+        "title": "Technical Skills",
+        "groups": [
+            {
+                "title": "Operations",
+                "items": [
+                    "Field Operations",
+                    "Control Room Operations",
+                    "Process Monitoring",
+                    "Troubleshooting",
+                    "Startup & Shutdown"
+                ]
+            },
+            {
+                "title": "Control Systems",
+                "items": [
+                    "Emerson DeltaV",
+                    "ICSS",
+                    "SCADA",
+                    "Fire & Gas",
+                    "ESD / PSD / LSD"
+                ]
+            },
+            {
+                "title": "Process Safety",
+                "items": [
+                    "PTW",
+                    "LOTO",
+                    "PSSR",
+                    "H₂S",
+                    "Cause & Effect"
+                ]
+            },
+            {
+                "title": "Engineering Documents",
+                "items": [
+                    "PFD",
+                    "P&ID",
+                    "Operating Procedures",
+                    "Process Documentation"
+                ]
+            },
+            {
+                "title": "Digital Skills",
+                "items": [
+                    "Python",
+                    "C / C++",
+                    "C#",
+                    "Excel VBA",
+                    "Google Apps Script"
+                ]
+            },
+            {
+                "title": "Current Technical Focus",
+                "items": [
+                    "DRI",
+                    "MIDREX",
+                    "Reduction Gas",
+                    "Reforming",
+                    "Gas Recycling"
+                ]
+            }
+        ]
+    },
+    "cv": {
+        "label": "CURRICULUM VITAE",
+        "title": "View My CV",
+        "description": "Download or view my current professional CV containing my complete experience, education, certifications and technical skills.",
+        "button": "View CV"
+    },
+    "contact": {
+        "label": "CONTACT",
+        "title": "Get In Touch",
+        "subtext": "Feel free to reach out through any of these channels.",
+        "items": [
+            {
+                "platform": "facebook",
+                "title": "Facebook",
+                "value": "Ahmed Saied Hawash",
+                "href": "https://www.facebook.com/AhmedSaiedHawash/"
+            },
+            {
+                "platform": "linkedin",
+                "title": "LinkedIn",
+                "value": "Professional profile",
+                "href": "https://www.linkedin.com/in/ahmedsaiedhawash/"
+            },
+            {
+                "platform": "github",
+                "title": "GitHub",
+                "value": "Code & projects",
+                "href": "https://github.com/ahmedsaiedhawash"
+            },
+            {
+                "platform": "instagram",
+                "title": "Instagram",
+                "value": "@ahmedsaiedhawash",
+                "href": "https://www.instagram.com/ahmedsaiedhawash/"
+            },
+            {
+                "platform": "twitter",
+                "title": "Twitter / X",
+                "value": "@ahmedsaiedhawash",
+                "href": "https://twitter.com/ahmedsaiedhawash"
+            },
+            {
+                "platform": "email",
+                "title": "Email",
+                "value": "ahmedsaiedhawash@gmail.com",
+                "href": "mailto:ahmedsaiedhawash@gmail.com"
+            },
+            {
+                "platform": "phone",
+                "title": "Phone",
+                "value": "+20 10 9157 0288",
+                "href": "tel:+201091570288"
+            }
+        ],
+        "whatsapp": {
+            "title": "Chat on WhatsApp",
+            "description": "Fastest way to reach me — usually reply within minutes.",
+            "button": "Open Chat",
+            "href": "https://wa.me/201091570288?text=Hello%20Ahmed%2C%20I%20found%20your%20website%20and%20would%20like%20to%20connect.",
+            "tooltip": "Chat with me"
+        }
+    },
+    "form": {
+        "name_label": "Name",
+        "email_label": "Email",
+        "subject_label": "Subject",
+        "message_label": "Message",
+        "submit": "Send Message"
+    },
+    "footer": {
+        "copyright": "Ahmed Saied Hawash",
+        "tagline": "Operations Technician • Ezz Steel"
+    }
+}

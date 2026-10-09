@@ -10,7 +10,7 @@
 // ⚠️ عند تحديث الموقع، قم بتغيير CACHE_VERSION
 // لكي يرى المتصفح الملفات الجديدة.
 
-const CACHE_VERSION = 'v1.0.0';
+const CACHE_VERSION = 'v1.0.1';
 const STATIC_CACHE = `static-${CACHE_VERSION}`;
 const IMAGE_CACHE = `images-${CACHE_VERSION}`;
 const RUNTIME_CACHE = `runtime-${CACHE_VERSION}`;
@@ -27,7 +27,8 @@ const PRECACHE_URLS = [
     '/script.js',
     '/renderer.js',
     '/manifest.json',
-    '/data.json',
+    '/data-en.json',
+    '/data-ar.json',
     '/robots.txt',
     '/sitemap.xml',
     '/images/favicon.png',

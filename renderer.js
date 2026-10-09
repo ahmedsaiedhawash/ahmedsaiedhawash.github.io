@@ -1,10 +1,11 @@
 // =========================
-// RENDERER.JS — Dynamic Content Loader
+// RENDERER.JS — Dynamic Content Loader (Split JSON Version)
 // =========================
-// يقرأ هذا السكربت ملف data.json ويملأ به عناصر HTML حسب اللغة الحالية.
-// اللغة تُحدد تلقائياً من خاصية lang في وسم <html>.
+// يقرأ هذا السكربت ملف JSON منفصل حسب لغة الصفحة:
+//   - اللغة الإنجليزية (lang="en") → data-en.json
+//   - اللغة العربية (lang="ar")     → data-ar.json
 //
-// العناصر في HTML يجب أن تحمل أحد هذه الخصائص:
+// العناصر في HTML التي تُملأ تلقائياً:
 // - data-i18n="path.to.key"           → لملء النص (textContent)
 // - data-i18n-attr="attr1:key1|attr2:key2" → لملء سمات مثل href أو alt
 // - data-career-items                  → حاوية تُبنى ديناميكياً لعناصر الخبرات
@@ -22,8 +23,18 @@
 (function () {
     'use strict';
 
-    // قراءة اللغة من وسم <html lang="...">
+    // =========================
+    // تحديد اللغة والملف المناسب
+    // =========================
     const LANG = (document.documentElement.lang || 'en').split('-')[0];
+
+    // خريطة اللغة → ملف JSON
+    const DATA_FILES = {
+        en: 'data-en.json',
+        ar: 'data-ar.json'
+    };
+
+    const DATA_FILE = DATA_FILES[LANG] || DATA_FILES.en;
 
     // =========================
     // أيقونات التواصل (SVG)
@@ -58,17 +69,17 @@
     // الدالة الرئيسية
     // =========================
     async function render() {
-        let data;
+        let dict;
+
         try {
-            const res = await fetch('data.json');
-            if (!res.ok) throw new Error('Failed to load data.json');
-            data = await res.json();
+            const res = await fetch(DATA_FILE);
+            if (!res.ok) throw new Error(`Failed to load ${DATA_FILE}`);
+            dict = await res.json();
         } catch (err) {
-            console.error('[Renderer] Error loading data.json:', err);
+            console.error(`[Renderer] Error loading ${DATA_FILE}:`, err);
             return; // نحتفظ بالمحتوى الأصلي في HTML
         }
 
-        const dict = data[LANG] || data.en;
         if (!dict) return;
 
         try {
@@ -92,7 +103,7 @@
             if (yearEl) yearEl.textContent = new Date().getFullYear();
 
             // إشعار باقي السكربتات
-            document.dispatchEvent(new CustomEvent('dataRendered', { detail: { lang: LANG } }));
+            document.dispatchEvent(new CustomEvent('dataRendered', { detail: { lang: LANG, file: DATA_FILE } }));
         } catch (err) {
             console.error('[Renderer] Error rendering data:', err);
         }
@@ -375,7 +386,6 @@
         }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
 
         els.forEach(el => {
-            // تجنب العناصر التي تم إظهارها مسبقاً
             if (!el.classList.contains('revealed')) observer.observe(el);
         });
     }
@@ -390,5 +400,5 @@
     }
 
     // للاستخدام الخارجي (Debugging)
-    window.__renderer = { render, getNestedValue };
+    window.__renderer = { render, getNestedValue, DATA_FILE, LANG };
 })();
