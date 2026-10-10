@@ -147,12 +147,21 @@
             },
             {
                 "logo": "nasp-logo.png",
-                "logo_alt": "شعار NASP",
+                "logo_alt": "شعار IASP / NASP",
                 "title": "OSHA 30-Hour General Industry",
-                "issuer": "NASP Approved — Egyptian Syndicate of Scientific Professions",
+                "issuer": "IASP — International Association of Safety Professionals",
                 "date": "تاريخ الإصدار: أبريل 2025 • Code: 648951",
                 "image": "cert-osha.jpg",
                 "image_alt": "OSHA 30-Hour Certificate Preview"
+            },
+            {
+                "logo": "essp-logo.png",
+                "logo_alt": "شعار ESSP",
+                "title": "OSHA General Industry",
+                "issuer": "Egyptian Syndicate of Scientific Professions",
+                "date": "تاريخ الإصدار: أبريل 2025 • Code: C4651417",
+                "image": "cert-osha-essp.jpg",
+                "image_alt": "OSHA General Industry Certificate Preview"
             },
             {
                 "logo": "abuqir-logo.png",
@@ -164,8 +173,8 @@
                 "image_alt": "Life Saving Rules Certificate Preview"
             },
             {
-                "logo": "petroleum-logo.png",
-                "logo_alt": "شعار Petroleum Industry Training",
+                "logo": "essp-logo.png",
+                "logo_alt": "شعار ESSP",
                 "title": "Petroleum Industry Fundamentals (44 Hours)",
                 "issuer": "Egyptian Syndicate of Scientific Professions",
                 "date": "تاريخ الإصدار: يوليو 2024 • Code: C15S346",
