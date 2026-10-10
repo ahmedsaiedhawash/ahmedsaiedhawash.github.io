@@ -25,7 +25,7 @@
         "name_line1": "Ahmed Saied",
         "name_line2": "Hawash",
         "title": "Operations Technician at Ezz Steel",
-        "description": "Operations professional with 3+ years of experience across offshore Oil & Gas production, petrochemical processing, and industrial operations — specialized in DCS/ICSS operations, process monitoring, production optimization, and process safety management.",
+        "description": "Operations professional with 3+ years across offshore Oil & Gas production, petrochemical processing, and industrial operations. Specialized in DCS/ICSS operations, process monitoring, production optimization, and process safety management.",
         "btn_primary": "Explore My Career",
         "btn_secondary": "View CV",
         "links": {
@@ -42,10 +42,10 @@
     "about": {
         "label": "ABOUT ME",
         "title": "Professional Profile",
-        "large_text": "I am an Operations professional with more than 3 years of experience across offshore Oil & Gas production, petrochemical processing, and industrial operations.",
+        "large_text": "Hands-on operations experience across Oil & Gas, petrochemical, and steel manufacturing environments.",
         "paragraphs": [
-            "My background covers DCS/ICSS operations, process monitoring, production optimization, and process safety management across offshore platforms and chemical processing facilities. I have worked on offshore production systems, subsea wells, chlorinated paraffin production units, and associated utility systems.",
-            "Currently, I am expanding my industrial operations expertise through technical training in steel manufacturing at Ezz Steel / EZDK, while building on a strong foundation in process operations, safety systems, troubleshooting, and continuous improvement."
+            "My background spans offshore platforms, subsea wells, chemical processing units, and utility systems — with a focus on safe operations, troubleshooting, and continuous improvement.",
+            "Currently expanding industrial expertise through technical training at Ezz Steel / EZDK, building on a strong foundation in process operations and safety systems."
         ],
         "info": [
             {
@@ -77,7 +77,7 @@
                 "logo": "ezz-logo.png",
                 "logo_alt": "Ezz Steel Logo",
                 "bg": "ezz-bg.jpg",
-                "description": "Undergoing operational and technical training on steel manufacturing processes, plant operations, and industrial safety standards. Developing practical knowledge of production systems, operational procedures, and manufacturing best practices.",
+                "description": "Technical training in steel manufacturing, plant operations, and industrial safety standards.",
                 "list": [],
                 "tags": [
                     "Steel Operations",
@@ -93,13 +93,13 @@
                 "logo": "abuqir-logo.png",
                 "logo_alt": "Abu Qir Petroleum Logo",
                 "bg": "Ahmed-Saied-Hawash_abuqir-bg.jpg",
-                "description": "Operated and monitored offshore production systems (DCS/ICSS and field) across multi-platform facilities and subsea wells in the North Abu Qir Field, ensuring safe and efficient operations in compliance with SOPs and Process Safety Management (PSM).",
+                "description": "Operated and monitored offshore production systems (DCS/ICSS and field) across multi-platform facilities and subsea wells in the North Abu Qir Field.",
                 "list": [
-                    "Managed production rates of up to 140 MMSCFD of gas and 3,500 BBL/D of oil.",
-                    "Designed and introduced an Excel VBA-based production reporting automation system integrated with a Telegram distribution bot, reducing manual workload by approximately 8 hours per week.",
-                    "Coordinated and supervised operations of two unmanned offshore platforms from the Master Platform, including field inspections and maintenance support.",
-                    "Monitored and supported WHCP, HPU, umbilical, chemical injection systems, and associated production facilities.",
-                    "Supported troubleshooting activities and collaborated with engineering and maintenance teams to improve equipment reliability and plant performance."
+                    "Managed production rates up to 140 MMSCFD gas and 3,500 BBL/D oil.",
+                    "Built an Excel VBA reporting system with Telegram bot — saved ~8 hours/week.",
+                    "Supervised two unmanned offshore platforms from the Master Platform.",
+                    "Monitored WHCP, HPU, umbilical, and chemical injection systems.",
+                    "Collaborated with engineering and maintenance on troubleshooting and reliability."
                 ],
                 "tags": [
                     "Oil & Gas",
@@ -116,11 +116,11 @@
                 "logo": "iicp-logo.png",
                 "logo_alt": "Chemical Park Logo",
                 "bg": "Ahmed-Saied-Hawash_iicp-bg.jpg",
-                "description": "Controlled chlorination reactions of Heavy Liquid Paraffin (HLP) in Chlorinated Paraffins (CPs 45%:52%) production, while optimizing chlorine concentration to achieve product specifications.",
+                "description": "Controlled chlorination reactions of Heavy Liquid Paraffin (HLP) for Chlorinated Paraffins (CPs 45%:52%) production, optimizing chlorine concentration to meet specifications.",
                 "list": [
-                    "Operated absorption and off-gas treatment systems for the production of Hydrochloric Acid (HCl 32%) and Sodium Hypochlorite (NaOCl 18%) by-products.",
-                    "Operated and maintained process equipment including reactors, UV-assisted reactors, heat exchangers, pumps, blowers, and degassers.",
-                    "Ensured safe handling of chlorine, HCl, NaOCl, and other hazardous chemicals in compliance with operational and safety procedures."
+                    "Operated absorption and off-gas systems for HCl 32% and NaOCl 18% by-products.",
+                    "Operated and maintained reactors, UV-assisted reactors, heat exchangers, pumps, blowers, and degassers.",
+                    "Ensured safe handling of chlorine, HCl, NaOCl, and other hazardous chemicals."
                 ],
                 "tags": [
                     "Chemical Operations",
@@ -216,7 +216,7 @@
                     "Control Room Operations",
                     "Process Monitoring",
                     "Production Optimization",
-                    "Troubleshooting & Root Cause Analysis"
+                    "Troubleshooting & RCA"
                 ]
             },
             {
@@ -233,7 +233,7 @@
                 "title": "Process Safety",
                 "items": [
                     "Permit to Work (PTW)",
-                    "Lockout/Tagout (LOTO)",
+                    "LOTO",
                     "Process Safety Management (PSM)",
                     "H₂S Monitoring & Emergency Response",
                     "Cause & Effect Analysis"
