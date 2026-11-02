@@ -10,7 +10,7 @@
 // ⚠️ عند تحديث الموقع، قم بتغيير CACHE_VERSION
 // لكي يرى المتصفح الملفات الجديدة.
 
-const CACHE_VERSION = 'v1.0.4';
+const CACHE_VERSION = 'v1.0.5';
 const STATIC_CACHE = `static-${CACHE_VERSION}`;
 const IMAGE_CACHE = `images-${CACHE_VERSION}`;
 const RUNTIME_CACHE = `runtime-${CACHE_VERSION}`;
@@ -239,4 +239,3 @@ self.addEventListener('message', (event) => {
 });
 
 console.log(`[SW] Service Worker loaded. Version: ${CACHE_VERSION}`);
-    
