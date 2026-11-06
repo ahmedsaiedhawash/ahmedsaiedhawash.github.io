@@ -1,8 +1,6 @@
 // =========================
 // SCRIPT.JS — Core Interactions
 // =========================
-// يعمل هذا الملف مع index.html و ar.html و renderer.js
-// يوفّر: تبديل الثيم، القائمة، شريط التقدم، معرض الشهادات، نموذج التواصل، حفظ اللغة.
 
 (function () {
     'use strict';
@@ -39,7 +37,6 @@
     // =========================
     // LANGUAGE PREFERENCE
     // =========================
-    // ملاحظة: لا نعيد التوجيه تلقائياً، فقط نتذكر الاختيار لعرضه في future.
     (function saveLangPreference() {
         try {
             const currentLang = (document.documentElement.lang || 'en').split('-')[0];
@@ -79,7 +76,7 @@
     }
 
     // =========================
-    // CURRENT YEAR (Fallback — renderer.js will also update it)
+    // CURRENT YEAR
     // =========================
     const currentYear = document.getElementById('currentYear');
     if (currentYear) currentYear.textContent = new Date().getFullYear();
@@ -158,7 +155,7 @@
     }
 
     // =========================
-    // SCROLL REVEAL (Fallback — will be re-run by renderer.js)
+    // SCROLL REVEAL
     // =========================
     const revealElements = document.querySelectorAll('.reveal');
     if (revealElements.length && 'IntersectionObserver' in window) {
@@ -238,7 +235,6 @@
             const img = getImageFromPreview(preview);
             if (!img) return;
 
-            // تجنب إضافة نفس الـ listener مرتين
             if (preview.dataset.bound === 'true') return;
             preview.dataset.bound = 'true';
 
@@ -269,18 +265,12 @@
         if (e.key === 'ArrowLeft') showPrev();
     });
 
-    // =========================
-    // EXPOSE REINIT FOR renderer.js
-    // =========================
     window.reinitCertificateLightbox = function () {
         refreshPreviews();
         bindPreviewEvents();
         applyCertificateOrientation();
     };
 
-    // =========================
-    // DYNAMIC CERTIFICATE ORIENTATION CLASSES
-    // =========================
     function applyCertificateOrientation() {
         document.querySelectorAll('.cert-preview img').forEach(img => {
             if (img.dataset.orientationBound === 'true') return;
@@ -310,13 +300,12 @@
         });
     }
 
-    // التشغيل الأولي
     refreshPreviews();
     bindPreviewEvents();
     applyCertificateOrientation();
 
     // =========================
-    // FLOATING WHATSAPP — DELAYED APPEARANCE
+    // FLOATING WHATSAPP
     // =========================
     const floatingWhatsapp = document.querySelector('.floating-whatsapp');
     if (floatingWhatsapp) {
@@ -333,8 +322,6 @@
     // =========================
     // CONTACT FORM (Web3Forms)
     // =========================
-    // ملاحظة: يجب الحصول على مفتاح API مجاني من https://web3forms.com/
-    // ثم استبدال YOUR_ACCESS_KEY أدناه.
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         const formStatus = document.getElementById('formStatus');
@@ -344,7 +331,13 @@
         contactForm.addEventListener('submit', async (e) => {
             e.preventDefault();
 
-            // Honeypot check (Bot filtering)
+            // 1. Validate Form
+            if (!contactForm.checkValidity()) {
+                contactForm.reportValidity();
+                return;
+            }
+
+            // 2. Honeypot check
             const honeypot = contactForm.querySelector('input[name="botcheck"]');
             if (honeypot && honeypot.checked) return;
 
@@ -389,7 +382,6 @@
         });
     }
 
-    // نصوص نموذج التواصل حسب اللغة
     function LANG_TEXT() {
         const lang = (document.documentElement.lang || 'en').split('-')[0];
         if (lang === 'ar') {
@@ -407,18 +399,7 @@
     }
 
     // =========================
-    // SERVICE WORKER (PWA Offline Support)
-    // =========================
-    if ('serviceWorker' in navigator && location.protocol === 'https:') {
-        window.addEventListener('load', () => {
-            navigator.serviceWorker.register('sw.js')
-                .then(reg => console.log('[SW] Registered:', reg.scope))
-                .catch(err => console.warn('[SW] Registration failed:', err));
-        });
-    }
-
-    // =========================
-    // SIMPLE ERROR TRACKING (via GA4)
+    // ERROR TRACKING (via GA4)
     // =========================
     window.addEventListener('error', (e) => {
         if (typeof gtag === 'function') {
@@ -430,7 +411,7 @@
     });
 
     // =========================
-    // SMOOTH SCROLL FOR ANCHOR LINKS (with Header Offset)
+    // SMOOTH SCROLL FOR ANCHOR LINKS
     // =========================
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
@@ -445,5 +426,8 @@
             window.scrollTo({ top: targetPosition, behavior: 'smooth' });
         });
     });
+
+    // ⚠️ ملاحظة: تم حذف كود الـ Service Worker من هنا بناءً على مراجعة Claude Code
+    // يرجى حذف ملف sw.js من المستودع نهائياً.
 
 })();

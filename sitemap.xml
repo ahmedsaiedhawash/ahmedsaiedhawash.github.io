@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset 
+<urlset
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
     xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <!-- ================= ENGLISH VERSION (Homepage) ================= -->
     <url>
         <loc>https://ahmedsaiedhawash.github.io/</loc>
-        <lastmod>2026-11-02</lastmod>
+        <lastmod>2026-11-06</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
         <!-- Hreflang Alternatives -->
@@ -35,7 +35,7 @@
     <!-- ================= ARABIC VERSION (Homepage) ================= -->
     <url>
         <loc>https://ahmedsaiedhawash.github.io/ar.html</loc>
-        <lastmod>2026-11-02</lastmod>
+        <lastmod>2026-11-06</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
         <!-- Hreflang Alternatives -->
@@ -56,8 +56,7 @@
         </image:image>
         <!-- OG Image -->
         <image:image>
-            <image:loc>https://ahmedsaiedhawash.github.io/images/Ahmed-Saied-Hawash_og.png
-            </image:loc>
+            <image:loc>https://ahmedsaiedhawash.github.io/images/Ahmed-Saied-Hawash_og.png</image:loc>
             <image:title>أحمد سعيد حواش — بانر الموقع</image:title>
             <image:caption>بانر الملف المهني — فني تشغيل</image:caption>
         </image:image>
