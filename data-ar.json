@@ -4,7 +4,6 @@
         "dir": "rtl",
         "title": "أحمد سعيد حواش | فني تشغيل | Oil & Gas & Petrochemical",
         "description": "أحمد سعيد حواش — فني تشغيل في Ezz Steel، بخبرة تزيد على 3 سنوات في عمليات إنتاج Oil & Gas البحرية، ومعالجة Petrochemical، وعمليات DCS/ICSS وإدارة Process Safety.",
-        "keywords": "أحمد سعيد حواش، فني تشغيل، Ezz Steel، Oil & Gas، Offshore Production، Petrochemical، Process Safety، DCS، ICSS، PSM، Alexandria Egypt",
         "theme_color": "#0b63ce"
     },
     "nav": {
@@ -74,9 +73,9 @@
                 "date": "يوليو 2026 – حتى الآن",
                 "job_title": "فني تشغيل متدرب (Operations Technician Trainee)",
                 "company": "Al Ezz Dekheila Steel Co. (EZDK) — Ezz Steel",
-                "logo": "ezz-logo.png",
+                "logo": "ezz-logo.webp",
                 "logo_alt": "Ezz Steel Logo",
-                "bg": "Ahmed-Saied-Hawash_ezz-bg.jpg",
+                "bg": "Ahmed-Saied-Hawash_ezz-bg.webp",
                 "description": "تدريب فني على عمليات تصنيع الصلب، وتشغيل المصنع، ومعايير السلامة الصناعية.",
                 "list": [],
                 "tags": [
@@ -90,9 +89,9 @@
                 "date": "أكتوبر 2024 – يونيو 2026",
                 "job_title": "مشغل إنتاج بحري (Offshore Production Operator)",
                 "company": "Abu Qir Petroleum Company",
-                "logo": "abuqir-logo.png",
+                "logo": "abuqir-logo.webp",
                 "logo_alt": "Abu Qir Petroleum Logo",
-                "bg": "Ahmed-Saied-Hawash_abuqir-bg.jpg",
+                "bg": "Ahmed-Saied-Hawash_abuqir-bg.webp",
                 "description": "تشغيل ومراقبة أنظمة الإنتاج البحري (DCS/ICSS والميدان) عبر منصات متعددة وآبار Subsea في حقل أبو قير الشمالي.",
                 "list": [
                     "إدارة إنتاج يصل إلى 140 MMSCFD غاز و 3,500 BBL/D زيت.",
@@ -113,9 +112,9 @@
                 "date": "مارس 2023 – سبتمبر 2024",
                 "job_title": "فني إنتاج (Production Technician)",
                 "company": "International Industrial Chemical Park (IICP)",
-                "logo": "iicp-logo.png",
+                "logo": "iicp-logo.webp",
                 "logo_alt": "Chemical Park Logo",
-                "bg": "Ahmed-Saied-Hawash_iicp-bg.jpg",
+                "bg": "Ahmed-Saied-Hawash_iicp-bg.webp",
                 "description": "التحكم في تفاعلات كلورة Heavy Liquid Paraffin (HLP) لإنتاج Chlorinated Paraffins (CPs 45%:52%)، مع تحسين تركيز الكلور للوصول للمواصفات.",
                 "list": [
                     "تشغيل أنظمة الامتصاص ومعالجة الغاز العادم لإنتاج HCl 32% و NaOCl 18% كمنتجات ثانوية.",
@@ -137,57 +136,57 @@
         "subtext": "اضغط على أي شهادة لعرضها بحجم أكبر.",
         "items": [
             {
-                "logo": "opito-logo.png",
+                "logo": "opito-logo.webp",
                 "logo_alt": "شعار OPITO",
                 "title": "BOSIET + HUET",
                 "issuer": "OPITO Approved — Arab Academy for Science, Technology & Maritime Transport",
                 "date": "تاريخ الإصدار: أكتوبر 2025 • تاريخ الانتهاء: أكتوبر 2029",
-                "image": "cert-bosiet.jpg",
+                "image": "cert-bosiet.webp",
                 "image_alt": "BOSIET + HUET Certificate Preview"
             },
             {
-                "logo": "nasp-logo.png",
+                "logo": "nasp-logo.webp",
                 "logo_alt": "شعار IASP / NASP",
                 "title": "OSHA 30-Hour General Industry",
                 "issuer": "IASP — International Association of Safety Professionals",
                 "date": "تاريخ الإصدار: أبريل 2025 • Code: 648951",
-                "image": "cert-osha.jpg",
+                "image": "cert-osha.webp",
                 "image_alt": "OSHA 30-Hour Certificate Preview"
             },
             {
-                "logo": "essp-logo.png",
+                "logo": "essp-logo.webp",
                 "logo_alt": "شعار ESSP",
                 "title": "OSHA General Industry",
                 "issuer": "Egyptian Syndicate of Scientific Professions",
                 "date": "تاريخ الإصدار: أبريل 2025 • Code: C4651417",
-                "image": "cert-osha-essp.jpg",
+                "image": "cert-osha-essp.webp",
                 "image_alt": "OSHA General Industry Certificate Preview"
             },
             {
-                "logo": "abuqir-logo.png",
+                "logo": "abuqir-logo.webp",
                 "logo_alt": "شعار Abu Qir Petroleum",
                 "title": "Life Saving Rules",
                 "issuer": "Abu Qir Petroleum Company",
                 "date": "تاريخ الإصدار: سبتمبر 2025 • Code: 7317",
-                "image": "cert-life-saving.jpg",
+                "image": "cert-life-saving.webp",
                 "image_alt": "Life Saving Rules Certificate Preview"
             },
             {
-                "logo": "essp-logo.png",
+                "logo": "essp-logo.webp",
                 "logo_alt": "شعار ESSP",
                 "title": "Petroleum Industry Fundamentals (44 Hours)",
                 "issuer": "Egyptian Syndicate of Scientific Professions",
                 "date": "تاريخ الإصدار: يوليو 2024 • Code: C15S346",
-                "image": "cert-petroleum.jpg",
+                "image": "cert-petroleum.webp",
                 "image_alt": "Petroleum Industry Fundamentals Certificate Preview"
             },
             {
-                "logo": "gammaltech-logo.png",
+                "logo": "gammaltech-logo.webp",
                 "logo_alt": "شعار Gammal Tech",
                 "title": "Cybersecurity 101",
                 "issuer": "Gammal Tech Academy",
                 "date": "تاريخ الإصدار: فبراير 2026 • Code: GT-2026-000080",
-                "image": "cert-cybersecurity.jpg",
+                "image": "cert-cybersecurity.webp",
                 "image_alt": "Cybersecurity 101 Certificate Preview"
             }
         ]

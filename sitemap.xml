@@ -1,29 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
     xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
+    <!-- ================= ENGLISH VERSION (Homepage) ================= -->
     <url>
         <loc>https://ahmedsaiedhawash.github.io/</loc>
         <lastmod>2026-11-06</lastmod>
-        <xhtml:link rel="alternate" hreflang="en"
-            href="https://ahmedsaiedhawash.github.io/" />
-        <xhtml:link rel="alternate" hreflang="ar"
-            href="https://ahmedsaiedhawash.github.io/ar.html" />
-        <xhtml:link rel="alternate" hreflang="x-default"
-            href="https://ahmedsaiedhawash.github.io/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://ahmedsaiedhawash.github.io/" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://ahmedsaiedhawash.github.io/ar.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://ahmedsaiedhawash.github.io/" />
+
+        <!-- Primary Images -->
+        <image:image>
+            <image:loc>https://ahmedsaiedhawash.github.io/images/ahmed-saied-hawash_profile.webp</image:loc>
+            <image:title>Ahmed Saied Hawash — Operations Technician</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://ahmedsaiedhawash.github.io/images/Ahmed-Saied-Hawash_about.webp</image:loc>
+            <image:title>Ahmed Saied Hawash at Work</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://ahmedsaiedhawash.github.io/images/Ahmed-Saied-Hawash_og.png</image:loc>
+            <image:title>Ahmed Saied Hawash — Portfolio Banner</image:title>
+        </image:image>
+
+        <!-- Certificate Images -->
+        <image:image>
+            <image:loc>https://ahmedsaiedhawash.github.io/images/cert-bosiet.webp</image:loc>
+            <image:title>BOSIET + HUET Certificate</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://ahmedsaiedhawash.github.io/images/cert-osha.webp</image:loc>
+            <image:title>OSHA 30-Hour Certificate</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://ahmedsaiedhawash.github.io/images/cert-life-saving.webp</image:loc>
+            <image:title>Life Saving Rules Certificate</image:title>
+        </image:image>
     </url>
 
+    <!-- ================= ARABIC VERSION (Homepage) ================= -->
     <url>
         <loc>https://ahmedsaiedhawash.github.io/ar.html</loc>
         <lastmod>2026-11-06</lastmod>
-        <xhtml:link rel="alternate" hreflang="en"
-            href="https://ahmedsaiedhawash.github.io/" />
-        <xhtml:link rel="alternate" hreflang="ar"
-            href="https://ahmedsaiedhawash.github.io/ar.html" />
-        <xhtml:link rel="alternate" hreflang="x-default"
-            href="https://ahmedsaiedhawash.github.io/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://ahmedsaiedhawash.github.io/" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://ahmedsaiedhawash.github.io/ar.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://ahmedsaiedhawash.github.io/" />
+
+        <!-- Primary Images -->
+        <image:image>
+            <image:loc>https://ahmedsaiedhawash.github.io/images/ahmed-saied-hawash_profile.webp</image:loc>
+            <image:title>أحمد سعيد حواش — فني تشغيل</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://ahmedsaiedhawash.github.io/images/Ahmed-Saied-Hawash_about.webp</image:loc>
+            <image:title>أحمد سعيد حواش في العمل</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://ahmedsaiedhawash.github.io/images/Ahmed-Saied-Hawash_og.png</image:loc>
+            <image:title>أحمد سعيد حواش — بانر الموقع</image:title>
+        </image:image>
+
+        <!-- Certificate Images -->
+        <image:image>
+            <image:loc>https://ahmedsaiedhawash.github.io/images/cert-bosiet.webp</image:loc>
+            <image:title>شهادة BOSIET + HUET</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://ahmedsaiedhawash.github.io/images/cert-osha.webp</image:loc>
+            <image:title>شهادة OSHA 30-Hour</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://ahmedsaiedhawash.github.io/images/cert-life-saving.webp</image:loc>
+            <image:title>شهادة Life Saving Rules</image:title>
+        </image:image>
     </url>
 
+    <!-- ================= SITEMAP HTML ================= -->
     <url>
         <loc>https://ahmedsaiedhawash.github.io/sitemap.html</loc>
         <lastmod>2026-11-06</lastmod>

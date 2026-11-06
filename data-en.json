@@ -4,7 +4,6 @@
         "dir": "ltr",
         "title": "Ahmed Saied Hawash | Operations Technician | Oil & Gas & Petrochemical",
         "description": "Ahmed Saied Hawash — Operations Technician at Ezz Steel, with 3+ years of experience in offshore Oil & Gas production, petrochemical processing, DCS/ICSS operations and process safety management.",
-        "keywords": "Ahmed Saied Hawash, Operations Technician, Ezz Steel, Oil & Gas, Offshore Production, Petrochemical, Process Safety, DCS, ICSS, PSM, Alexandria Egypt",
         "theme_color": "#0b63ce"
     },
     "nav": {
@@ -74,9 +73,9 @@
                 "date": "Jul 2026 – Present",
                 "job_title": "Operations Technician Trainee",
                 "company": "Al Ezz Dekheila Steel Co. (EZDK) — Ezz Steel",
-                "logo": "ezz-logo.png",
+                "logo": "ezz-logo.webp",
                 "logo_alt": "Ezz Steel Logo",
-                "bg": "Ahmed-Saied-Hawash_ezz-bg.jpg",
+                "bg": "Ahmed-Saied-Hawash_ezz-bg.webp",
                 "description": "Technical training in steel manufacturing, plant operations, and industrial safety standards.",
                 "list": [],
                 "tags": [
@@ -90,9 +89,9 @@
                 "date": "Oct 2024 – Jun 2026",
                 "job_title": "Offshore Production Operator",
                 "company": "Abu Qir Petroleum Company",
-                "logo": "abuqir-logo.png",
+                "logo": "abuqir-logo.webp",
                 "logo_alt": "Abu Qir Petroleum Logo",
-                "bg": "Ahmed-Saied-Hawash_abuqir-bg.jpg",
+                "bg": "Ahmed-Saied-Hawash_abuqir-bg.webp",
                 "description": "Operated and monitored offshore production systems (DCS/ICSS and field) across multi-platform facilities and subsea wells in the North Abu Qir Field.",
                 "list": [
                     "Managed production rates up to 140 MMSCFD gas and 3,500 BBL/D oil.",
@@ -113,9 +112,9 @@
                 "date": "Mar 2023 – Sep 2024",
                 "job_title": "Production Technician",
                 "company": "International Industrial Chemical Park (IICP)",
-                "logo": "iicp-logo.png",
+                "logo": "iicp-logo.webp",
                 "logo_alt": "Chemical Park Logo",
-                "bg": "Ahmed-Saied-Hawash_iicp-bg.jpg",
+                "bg": "Ahmed-Saied-Hawash_iicp-bg.webp",
                 "description": "Controlled chlorination reactions of Heavy Liquid Paraffin (HLP) for Chlorinated Paraffins (CPs 45%:52%) production, optimizing chlorine concentration to meet specifications.",
                 "list": [
                     "Operated absorption and off-gas systems for HCl 32% and NaOCl 18% by-products.",
@@ -137,57 +136,57 @@
         "subtext": "Click any certificate preview to enlarge it.",
         "items": [
             {
-                "logo": "opito-logo.png",
+                "logo": "opito-logo.webp",
                 "logo_alt": "OPITO Approved Logo",
                 "title": "BOSIET + HUET",
                 "issuer": "OPITO Approved — Arab Academy for Science, Technology & Maritime Transport",
                 "date": "Issued Oct 2025 • Expires Oct 2029",
-                "image": "cert-bosiet.jpg",
+                "image": "cert-bosiet.webp",
                 "image_alt": "BOSIET + HUET Certificate Preview"
             },
             {
-                "logo": "nasp-logo.png",
+                "logo": "nasp-logo.webp",
                 "logo_alt": "IASP / NASP Logo",
                 "title": "OSHA 30-Hour General Industry",
                 "issuer": "IASP — International Association of Safety Professionals",
                 "date": "Issued Apr 2025 • Code: 648951",
-                "image": "cert-osha.jpg",
+                "image": "cert-osha.webp",
                 "image_alt": "OSHA 30-Hour Certificate Preview"
             },
             {
-                "logo": "essp-logo.png",
+                "logo": "essp-logo.webp",
                 "logo_alt": "ESSP Logo",
                 "title": "OSHA General Industry",
                 "issuer": "Egyptian Syndicate of Scientific Professions",
                 "date": "Issued Apr 2025 • Code: C4651417",
-                "image": "cert-osha-essp.jpg",
+                "image": "cert-osha-essp.webp",
                 "image_alt": "OSHA General Industry Certificate Preview"
             },
             {
-                "logo": "abuqir-logo.png",
+                "logo": "abuqir-logo.webp",
                 "logo_alt": "Abu Qir Petroleum Logo",
                 "title": "Life Saving Rules",
                 "issuer": "Abu Qir Petroleum Company",
                 "date": "Issued Sep 2025 • Code: 7317",
-                "image": "cert-life-saving.jpg",
+                "image": "cert-life-saving.webp",
                 "image_alt": "Life Saving Rules Certificate Preview"
             },
             {
-                "logo": "essp-logo.png",
+                "logo": "essp-logo.webp",
                 "logo_alt": "ESSP Logo",
                 "title": "Petroleum Industry Fundamentals (44 Hours)",
                 "issuer": "Egyptian Syndicate of Scientific Professions",
                 "date": "Issued Jul 2024 • Code: C15S346",
-                "image": "cert-petroleum.jpg",
+                "image": "cert-petroleum.webp",
                 "image_alt": "Petroleum Industry Fundamentals Certificate Preview"
             },
             {
-                "logo": "gammaltech-logo.png",
+                "logo": "gammaltech-logo.webp",
                 "logo_alt": "Gammal Tech Logo",
                 "title": "Cybersecurity 101",
                 "issuer": "Gammal Tech Academy",
                 "date": "Issued Feb 2026 • Code: GT-2026-000080",
-                "image": "cert-cybersecurity.jpg",
+                "image": "cert-cybersecurity.webp",
                 "image_alt": "Cybersecurity 101 Certificate Preview"
             }
         ]
