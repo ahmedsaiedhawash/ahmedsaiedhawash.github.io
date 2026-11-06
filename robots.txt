@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://portfolio.hawash.workers.dev/sitemap.html
+Sitemap: https://ahmedsaiedhawash.github.io/sitemap.html
