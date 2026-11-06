@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Map | Ahmed Saied Hawash</title>
+    <meta name="description" content="Sitemap for Ahmed Saied Hawash's portfolio website.">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .sitemap-page {
+            padding: 120px 0 80px;
+            min-height: 80vh;
+        }
+
+        .sitemap-page h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--text);
+        }
+
+        .sitemap-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .sitemap-list a {
+            font-size: 1.2rem;
+            color: var(--primary);
+            text-decoration: none;
+            padding: 15px 20px;
+            background: var(--light);
+            border-radius: 10px;
+            border: 1px solid var(--border);
+            transition: transform var(--transition), background var(--transition);
+        }
+
+        .sitemap-list a:hover {
+            transform: translateX(10px);
+            background: var(--primary-light);
+            color: var(--primary-dark);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar container">
+            <a href="/" class="logo">AH</a>
+            <a href="/" class="btn btn-primary" style="min-height: 40px;">Back to Home</a>
+        </nav>
+    </header>
+
+    <main class="container sitemap-page">
+        <h1>Site Map</h1>
+        <p style="color: var(--muted);">A simple map of all pages available on this website.</p>
+
+        <div class="sitemap-list">
+            <a href="/">🏠 Home (English)</a>
+            <a href="/ar.html">🏠 Home (Arabic)</a>
+            <!-- يمكنك إضافة أي صفحات أخرى هنا مستقبلاً -->
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>© <span id="currentYear"></span> Ahmed Saied Hawash</p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
